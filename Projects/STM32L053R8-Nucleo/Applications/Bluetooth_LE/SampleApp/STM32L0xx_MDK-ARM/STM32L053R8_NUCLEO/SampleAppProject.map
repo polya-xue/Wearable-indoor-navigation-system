@@ -1,0 +1,1611 @@
+Product: MDK-ARM Standard 5.10
+Component: ARM Compiler 5.04 update 1 (build 49)
+Tool: armlink [5040049]
+
+==============================================================================
+
+Section Cross References
+
+    stm32l0xx_nucleo.o(i.ADCx_Init) refers to stm32l0xx_hal_adc.o(i.HAL_ADC_GetState) for HAL_ADC_GetState
+    stm32l0xx_nucleo.o(i.ADCx_Init) refers to stm32l0xx_nucleo.o(i.ADCx_MspInit) for ADCx_MspInit
+    stm32l0xx_nucleo.o(i.ADCx_Init) refers to stm32l0xx_hal_adc.o(i.HAL_ADC_Init) for HAL_ADC_Init
+    stm32l0xx_nucleo.o(i.ADCx_Init) refers to stm32l0xx_nucleo.o(.bss) for .bss
+    stm32l0xx_nucleo.o(i.ADCx_MspInit) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_Init) for HAL_GPIO_Init
+    stm32l0xx_nucleo.o(i.BSP_JOY_GetState) refers to stm32l0xx_hal_adc.o(i.HAL_ADC_Start) for HAL_ADC_Start
+    stm32l0xx_nucleo.o(i.BSP_JOY_GetState) refers to stm32l0xx_hal_adc.o(i.HAL_ADC_PollForConversion) for HAL_ADC_PollForConversion
+    stm32l0xx_nucleo.o(i.BSP_JOY_GetState) refers to stm32l0xx_hal_adc.o(i.HAL_ADC_GetState) for HAL_ADC_GetState
+    stm32l0xx_nucleo.o(i.BSP_JOY_GetState) refers to stm32l0xx_hal_adc.o(i.HAL_ADC_GetValue) for HAL_ADC_GetValue
+    stm32l0xx_nucleo.o(i.BSP_JOY_GetState) refers to stm32l0xx_nucleo.o(.bss) for .bss
+    stm32l0xx_nucleo.o(i.BSP_JOY_Init) refers to stm32l0xx_nucleo.o(i.ADCx_Init) for ADCx_Init
+    stm32l0xx_nucleo.o(i.BSP_JOY_Init) refers to stm32l0xx_hal_adc_ex.o(i.HAL_ADCEx_Calibration_Start) for HAL_ADCEx_Calibration_Start
+    stm32l0xx_nucleo.o(i.BSP_JOY_Init) refers to stm32l0xx_hal_adc.o(i.HAL_ADC_ConfigChannel) for HAL_ADC_ConfigChannel
+    stm32l0xx_nucleo.o(i.BSP_JOY_Init) refers to stm32l0xx_nucleo.o(.bss) for .bss
+    stm32l0xx_nucleo.o(i.BSP_JOY_Init) refers to stm32l0xx_nucleo.o(.data) for .data
+    stm32l0xx_nucleo.o(i.BSP_LED_Init) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_Init) for HAL_GPIO_Init
+    stm32l0xx_nucleo.o(i.BSP_LED_Init) refers to stm32l0xx_nucleo.o(.constdata) for .constdata
+    stm32l0xx_nucleo.o(i.BSP_LED_Init) refers to stm32l0xx_nucleo.o(.data) for .data
+    stm32l0xx_nucleo.o(i.BSP_LED_Off) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    stm32l0xx_nucleo.o(i.BSP_LED_Off) refers to stm32l0xx_nucleo.o(.constdata) for .constdata
+    stm32l0xx_nucleo.o(i.BSP_LED_Off) refers to stm32l0xx_nucleo.o(.data) for .data
+    stm32l0xx_nucleo.o(i.BSP_LED_On) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    stm32l0xx_nucleo.o(i.BSP_LED_On) refers to stm32l0xx_nucleo.o(.constdata) for .constdata
+    stm32l0xx_nucleo.o(i.BSP_LED_On) refers to stm32l0xx_nucleo.o(.data) for .data
+    stm32l0xx_nucleo.o(i.BSP_LED_Toggle) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_TogglePin) for HAL_GPIO_TogglePin
+    stm32l0xx_nucleo.o(i.BSP_LED_Toggle) refers to stm32l0xx_nucleo.o(.constdata) for .constdata
+    stm32l0xx_nucleo.o(i.BSP_LED_Toggle) refers to stm32l0xx_nucleo.o(.data) for .data
+    stm32l0xx_nucleo.o(i.BSP_PB_GetState) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_ReadPin) for HAL_GPIO_ReadPin
+    stm32l0xx_nucleo.o(i.BSP_PB_GetState) refers to stm32l0xx_nucleo.o(.constdata) for .constdata
+    stm32l0xx_nucleo.o(i.BSP_PB_GetState) refers to stm32l0xx_nucleo.o(.data) for .data
+    stm32l0xx_nucleo.o(i.BSP_PB_Init) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_Init) for HAL_GPIO_Init
+    stm32l0xx_nucleo.o(i.BSP_PB_Init) refers to stm32l0xx_hal_cortex.o(i.HAL_NVIC_EnableIRQ) for HAL_NVIC_EnableIRQ
+    stm32l0xx_nucleo.o(i.BSP_PB_Init) refers to stm32l0xx_nucleo.o(.constdata) for .constdata
+    stm32l0xx_nucleo.o(i.BSP_PB_Init) refers to stm32l0xx_nucleo.o(.data) for .data
+    stm32l0xx_nucleo.o(i.LCD_Delay) refers to stm32l0xx_hal.o(i.HAL_Delay) for HAL_Delay
+    stm32l0xx_nucleo.o(i.LCD_IO_Init) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_Init) for HAL_GPIO_Init
+    stm32l0xx_nucleo.o(i.LCD_IO_Init) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    stm32l0xx_nucleo.o(i.LCD_IO_Init) refers to stm32l0xx_nucleo.o(i.SPIx_Init) for SPIx_Init
+    stm32l0xx_nucleo.o(i.LCD_IO_WriteData) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    stm32l0xx_nucleo.o(i.LCD_IO_WriteData) refers to stm32l0xx_nucleo.o(i.SPIx_Write) for SPIx_Write
+    stm32l0xx_nucleo.o(i.LCD_IO_WriteReg) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    stm32l0xx_nucleo.o(i.LCD_IO_WriteReg) refers to stm32l0xx_nucleo.o(i.SPIx_Write) for SPIx_Write
+    stm32l0xx_nucleo.o(i.SD_IO_Init) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_Init) for HAL_GPIO_Init
+    stm32l0xx_nucleo.o(i.SD_IO_Init) refers to stm32l0xx_nucleo.o(i.SPIx_Init) for SPIx_Init
+    stm32l0xx_nucleo.o(i.SD_IO_Init) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    stm32l0xx_nucleo.o(i.SD_IO_Init) refers to stm32l0xx_nucleo.o(i.SD_IO_WriteByte) for SD_IO_WriteByte
+    stm32l0xx_nucleo.o(i.SD_IO_ReadByte) refers to stm32l0xx_nucleo.o(i.SPIx_Read) for SPIx_Read
+    stm32l0xx_nucleo.o(i.SD_IO_WaitResponse) refers to stm32l0xx_nucleo.o(i.SD_IO_ReadByte) for SD_IO_ReadByte
+    stm32l0xx_nucleo.o(i.SD_IO_WriteByte) refers to stm32l0xx_nucleo.o(i.SPIx_Write) for SPIx_Write
+    stm32l0xx_nucleo.o(i.SD_IO_WriteCmd) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    stm32l0xx_nucleo.o(i.SD_IO_WriteCmd) refers to stm32l0xx_nucleo.o(i.SD_IO_WriteByte) for SD_IO_WriteByte
+    stm32l0xx_nucleo.o(i.SD_IO_WriteCmd) refers to stm32l0xx_nucleo.o(i.SD_IO_WaitResponse) for SD_IO_WaitResponse
+    stm32l0xx_nucleo.o(i.SD_IO_WriteDummy) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    stm32l0xx_nucleo.o(i.SD_IO_WriteDummy) refers to stm32l0xx_nucleo.o(i.SD_IO_WriteByte) for SD_IO_WriteByte
+    stm32l0xx_nucleo.o(i.SPIx_Error) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_DeInit) for HAL_SPI_DeInit
+    stm32l0xx_nucleo.o(i.SPIx_Error) refers to stm32l0xx_nucleo.o(i.SPIx_Init) for SPIx_Init
+    stm32l0xx_nucleo.o(i.SPIx_Error) refers to stm32l0xx_nucleo.o(.bss) for .bss
+    stm32l0xx_nucleo.o(i.SPIx_Init) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_GetState) for HAL_SPI_GetState
+    stm32l0xx_nucleo.o(i.SPIx_Init) refers to stm32l0xx_nucleo.o(i.SPIx_MspInit) for SPIx_MspInit
+    stm32l0xx_nucleo.o(i.SPIx_Init) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_Init) for HAL_SPI_Init
+    stm32l0xx_nucleo.o(i.SPIx_Init) refers to stm32l0xx_nucleo.o(.bss) for .bss
+    stm32l0xx_nucleo.o(i.SPIx_MspInit) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_Init) for HAL_GPIO_Init
+    stm32l0xx_nucleo.o(i.SPIx_Read) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive) for HAL_SPI_TransmitReceive
+    stm32l0xx_nucleo.o(i.SPIx_Read) refers to stm32l0xx_nucleo.o(i.SPIx_Error) for SPIx_Error
+    stm32l0xx_nucleo.o(i.SPIx_Read) refers to stm32l0xx_nucleo.o(.data) for .data
+    stm32l0xx_nucleo.o(i.SPIx_Read) refers to stm32l0xx_nucleo.o(.bss) for .bss
+    stm32l0xx_nucleo.o(i.SPIx_Write) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_Transmit) for HAL_SPI_Transmit
+    stm32l0xx_nucleo.o(i.SPIx_Write) refers to stm32l0xx_nucleo.o(i.SPIx_Error) for SPIx_Error
+    stm32l0xx_nucleo.o(i.SPIx_Write) refers to stm32l0xx_nucleo.o(.data) for .data
+    stm32l0xx_nucleo.o(i.SPIx_Write) refers to stm32l0xx_nucleo.o(.bss) for .bss
+    stm32l0xx_nucleo_bluenrg.o(i.HAL_SPI_MspInit) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_Init) for HAL_GPIO_Init
+    stm32l0xx_nucleo_bluenrg.o(i.HAL_SPI_MspInit) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    stm32l0xx_nucleo_bluenrg.o(i.HAL_SPI_MspInit) refers to stm32l0xx_hal_cortex.o(i.HAL_NVIC_SetPriority) for HAL_NVIC_SetPriority
+    stm32l0xx_nucleo_bluenrg.o(i.HAL_SPI_MspInit) refers to stm32l0xx_hal_cortex.o(i.HAL_NVIC_EnableIRQ) for HAL_NVIC_EnableIRQ
+    system_stm32l0xx.o(i.SystemCoreClockUpdate) refers to uidiv.o(.text) for __aeabi_uidivmod
+    system_stm32l0xx.o(i.SystemCoreClockUpdate) refers to system_stm32l0xx.o(.data) for .data
+    stm32l0xx_hal.o(i.HAL_DeInit) refers to stm32l0xx_hal.o(i.HAL_MspDeInit) for HAL_MspDeInit
+    stm32l0xx_hal.o(i.HAL_Delay) refers to stm32l0xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32l0xx_hal.o(i.HAL_GetTick) refers to stm32l0xx_hal.o(.data) for .data
+    stm32l0xx_hal.o(i.HAL_IncTick) refers to stm32l0xx_hal.o(.data) for .data
+    stm32l0xx_hal.o(i.HAL_Init) refers to stm32l0xx_hal.o(i.HAL_InitTick) for HAL_InitTick
+    stm32l0xx_hal.o(i.HAL_Init) refers to stm32l0xx_hal.o(i.HAL_MspInit) for HAL_MspInit
+    stm32l0xx_hal.o(i.HAL_InitTick) refers to stm32l0xx_hal_rcc.o(i.HAL_RCC_GetHCLKFreq) for HAL_RCC_GetHCLKFreq
+    stm32l0xx_hal.o(i.HAL_InitTick) refers to uidiv.o(.text) for __aeabi_uidivmod
+    stm32l0xx_hal.o(i.HAL_InitTick) refers to stm32l0xx_hal_cortex.o(i.HAL_SYSTICK_Config) for HAL_SYSTICK_Config
+    stm32l0xx_hal.o(i.HAL_InitTick) refers to stm32l0xx_hal_cortex.o(i.HAL_NVIC_SetPriority) for HAL_NVIC_SetPriority
+    stm32l0xx_hal_adc.o(i.ADC_ConversionStop) refers to stm32l0xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32l0xx_hal_adc.o(i.ADC_DMAConvCplt) refers to stm32l0xx_hal_adc.o(i.HAL_ADC_ConvCpltCallback) for HAL_ADC_ConvCpltCallback
+    stm32l0xx_hal_adc.o(i.ADC_DMAError) refers to stm32l0xx_hal_adc.o(i.HAL_ADC_ErrorCallback) for HAL_ADC_ErrorCallback
+    stm32l0xx_hal_adc.o(i.ADC_DMAHalfConvCplt) refers to stm32l0xx_hal_adc.o(i.HAL_ADC_ConvHalfCpltCallback) for HAL_ADC_ConvHalfCpltCallback
+    stm32l0xx_hal_adc.o(i.ADC_Disable) refers to stm32l0xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32l0xx_hal_adc.o(i.ADC_Enable) refers to stm32l0xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32l0xx_hal_adc.o(i.HAL_ADC_DeInit) refers to stm32l0xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32l0xx_hal_adc.o(i.HAL_ADC_DeInit) refers to stm32l0xx_hal_adc.o(i.HAL_ADC_MspDeInit) for HAL_ADC_MspDeInit
+    stm32l0xx_hal_adc.o(i.HAL_ADC_IRQHandler) refers to stm32l0xx_hal_adc.o(i.HAL_ADC_ConvCpltCallback) for HAL_ADC_ConvCpltCallback
+    stm32l0xx_hal_adc.o(i.HAL_ADC_IRQHandler) refers to stm32l0xx_hal_adc.o(i.HAL_ADC_LevelOutOfWindowCallback) for HAL_ADC_LevelOutOfWindowCallback
+    stm32l0xx_hal_adc.o(i.HAL_ADC_IRQHandler) refers to stm32l0xx_hal_adc.o(i.HAL_ADC_ErrorCallback) for HAL_ADC_ErrorCallback
+    stm32l0xx_hal_adc.o(i.HAL_ADC_Init) refers to stm32l0xx_hal_adc.o(i.HAL_ADC_MspInit) for HAL_ADC_MspInit
+    stm32l0xx_hal_adc.o(i.HAL_ADC_Init) refers to stm32l0xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32l0xx_hal_adc.o(i.HAL_ADC_Init) refers to stm32l0xx_hal.o(i.HAL_Delay) for HAL_Delay
+    stm32l0xx_hal_adc.o(i.HAL_ADC_PollForConversion) refers to stm32l0xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32l0xx_hal_adc.o(i.HAL_ADC_PollForEvent) refers to stm32l0xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32l0xx_hal_adc.o(i.HAL_ADC_Start) refers to stm32l0xx_hal_adc.o(i.ADC_Enable) for ADC_Enable
+    stm32l0xx_hal_adc.o(i.HAL_ADC_Start_DMA) refers to stm32l0xx_hal_adc.o(i.ADC_Enable) for ADC_Enable
+    stm32l0xx_hal_adc.o(i.HAL_ADC_Start_DMA) refers to stm32l0xx_hal_dma.o(i.HAL_DMA_Start_IT) for HAL_DMA_Start_IT
+    stm32l0xx_hal_adc.o(i.HAL_ADC_Start_DMA) refers to stm32l0xx_hal_adc.o(i.ADC_DMAConvCplt) for ADC_DMAConvCplt
+    stm32l0xx_hal_adc.o(i.HAL_ADC_Start_DMA) refers to stm32l0xx_hal_adc.o(i.ADC_DMAHalfConvCplt) for ADC_DMAHalfConvCplt
+    stm32l0xx_hal_adc.o(i.HAL_ADC_Start_DMA) refers to stm32l0xx_hal_adc.o(i.ADC_DMAError) for ADC_DMAError
+    stm32l0xx_hal_adc.o(i.HAL_ADC_Start_IT) refers to stm32l0xx_hal_adc.o(i.ADC_Enable) for ADC_Enable
+    stm32l0xx_hal_adc.o(i.HAL_ADC_Stop) refers to stm32l0xx_hal_adc.o(i.ADC_ConversionStop) for ADC_ConversionStop
+    stm32l0xx_hal_adc.o(i.HAL_ADC_Stop) refers to stm32l0xx_hal_adc.o(i.ADC_Disable) for ADC_Disable
+    stm32l0xx_hal_adc.o(i.HAL_ADC_Stop_DMA) refers to stm32l0xx_hal_adc.o(i.ADC_ConversionStop) for ADC_ConversionStop
+    stm32l0xx_hal_adc.o(i.HAL_ADC_Stop_DMA) refers to stm32l0xx_hal_dma.o(i.HAL_DMA_Abort) for HAL_DMA_Abort
+    stm32l0xx_hal_adc.o(i.HAL_ADC_Stop_DMA) refers to stm32l0xx_hal_adc.o(i.ADC_Disable) for ADC_Disable
+    stm32l0xx_hal_adc.o(i.HAL_ADC_Stop_IT) refers to stm32l0xx_hal_adc.o(i.ADC_ConversionStop) for ADC_ConversionStop
+    stm32l0xx_hal_adc.o(i.HAL_ADC_Stop_IT) refers to stm32l0xx_hal_adc.o(i.ADC_Disable) for ADC_Disable
+    stm32l0xx_hal_adc_ex.o(i.HAL_ADCEx_Calibration_Start) refers to stm32l0xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32l0xx_hal_cortex.o(i.HAL_NVIC_SetPriority) refers to stm32l0xx_hal_cortex.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    stm32l0xx_hal_cortex.o(i.HAL_SYSTICK_Config) refers to stm32l0xx_hal_cortex.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    stm32l0xx_hal_cortex.o(i.HAL_SYSTICK_IRQHandler) refers to stm32l0xx_hal_cortex.o(i.HAL_SYSTICK_Callback) for HAL_SYSTICK_Callback
+    stm32l0xx_hal_dma.o(i.HAL_DMA_Abort) refers to stm32l0xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32l0xx_hal_dma.o(i.HAL_DMA_PollForTransfer) refers to stm32l0xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32l0xx_hal_dma.o(i.HAL_DMA_Start) refers to stm32l0xx_hal_dma.o(i.DMA_SetConfig) for DMA_SetConfig
+    stm32l0xx_hal_dma.o(i.HAL_DMA_Start_IT) refers to stm32l0xx_hal_dma.o(i.DMA_SetConfig) for DMA_SetConfig
+    stm32l0xx_hal_flash.o(i.FLASH_SetErrorCode) refers to stm32l0xx_hal_flash.o(.bss) for .bss
+    stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) refers to stm32l0xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) refers to stm32l0xx_hal_flash.o(i.FLASH_SetErrorCode) for FLASH_SetErrorCode
+    stm32l0xx_hal_flash.o(i.HAL_FLASH_GetError) refers to stm32l0xx_hal_flash.o(.bss) for .bss
+    stm32l0xx_hal_flash.o(i.HAL_FLASH_IRQHandler) refers to stm32l0xx_hal_flash.o(i.HAL_FLASH_EndOfOperationCallback) for HAL_FLASH_EndOfOperationCallback
+    stm32l0xx_hal_flash.o(i.HAL_FLASH_IRQHandler) refers to stm32l0xx_hal_flash.o(i.FLASH_Erase_Page) for FLASH_Erase_Page
+    stm32l0xx_hal_flash.o(i.HAL_FLASH_IRQHandler) refers to stm32l0xx_hal_flash.o(i.FLASH_SetErrorCode) for FLASH_SetErrorCode
+    stm32l0xx_hal_flash.o(i.HAL_FLASH_IRQHandler) refers to stm32l0xx_hal_flash.o(i.HAL_FLASH_OperationErrorCallback) for HAL_FLASH_OperationErrorCallback
+    stm32l0xx_hal_flash.o(i.HAL_FLASH_IRQHandler) refers to stm32l0xx_hal_flash.o(.bss) for .bss
+    stm32l0xx_hal_flash.o(i.HAL_FLASH_OB_Launch) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash.o(i.HAL_FLASH_Program) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash.o(i.HAL_FLASH_Program) refers to stm32l0xx_hal_flash.o(i.FLASH_Program_Word) for FLASH_Program_Word
+    stm32l0xx_hal_flash.o(i.HAL_FLASH_Program) refers to stm32l0xx_hal_flash.o(.bss) for .bss
+    stm32l0xx_hal_flash.o(i.HAL_FLASH_Program_IT) refers to stm32l0xx_hal_flash.o(i.FLASH_Program_Word) for FLASH_Program_Word
+    stm32l0xx_hal_flash.o(i.HAL_FLASH_Program_IT) refers to stm32l0xx_hal_flash.o(.bss) for .bss
+    stm32l0xx_hal_flash_ex.o(i.FLASH_DATAEEPROM_FastProgramByte) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash_ex.o(i.FLASH_DATAEEPROM_FastProgramHalfWord) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash_ex.o(i.FLASH_DATAEEPROM_FastProgramWord) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash_ex.o(i.FLASH_DATAEEPROM_ProgramByte) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash_ex.o(i.FLASH_DATAEEPROM_ProgramHalfWord) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash_ex.o(i.FLASH_DATAEEPROM_ProgramWord) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash_ex.o(i.FLASH_OB_BOR_LevelConfig) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash_ex.o(i.FLASH_OB_BootConfig) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash_ex.o(i.FLASH_OB_PCROPConfig) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash_ex.o(i.FLASH_OB_PCROPSelectionConfig) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash_ex.o(i.FLASH_OB_RDP_LevelConfig) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash_ex.o(i.FLASH_OB_UserConfig) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash_ex.o(i.FLASH_OB_WRPConfig) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_AdvOBProgram) refers to stm32l0xx_hal_flash_ex.o(i.FLASH_OB_PCROPConfig) for FLASH_OB_PCROPConfig
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_AdvOBProgram) refers to stm32l0xx_hal_flash_ex.o(i.FLASH_OB_PCROPSelectionConfig) for FLASH_OB_PCROPSelectionConfig
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_AdvOBProgram) refers to stm32l0xx_hal_flash_ex.o(i.FLASH_OB_BootConfig) for FLASH_OB_BootConfig
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_DATAEEPROM_Erase) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_DATAEEPROM_Program) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_DATAEEPROM_Program) refers to stm32l0xx_hal_flash_ex.o(i.FLASH_DATAEEPROM_FastProgramByte) for FLASH_DATAEEPROM_FastProgramByte
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_DATAEEPROM_Program) refers to stm32l0xx_hal_flash_ex.o(i.FLASH_DATAEEPROM_FastProgramHalfWord) for FLASH_DATAEEPROM_FastProgramHalfWord
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_DATAEEPROM_Program) refers to stm32l0xx_hal_flash_ex.o(i.FLASH_DATAEEPROM_FastProgramWord) for FLASH_DATAEEPROM_FastProgramWord
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_DATAEEPROM_Program) refers to stm32l0xx_hal_flash_ex.o(i.FLASH_DATAEEPROM_ProgramWord) for FLASH_DATAEEPROM_ProgramWord
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_DATAEEPROM_Program) refers to stm32l0xx_hal_flash_ex.o(i.FLASH_DATAEEPROM_ProgramHalfWord) for FLASH_DATAEEPROM_ProgramHalfWord
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_DATAEEPROM_Program) refers to stm32l0xx_hal_flash_ex.o(i.FLASH_DATAEEPROM_ProgramByte) for FLASH_DATAEEPROM_ProgramByte
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_DATAEEPROM_Program) refers to stm32l0xx_hal_flash.o(.bss) for pFlash
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_Erase) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_Erase) refers to stm32l0xx_hal_flash.o(i.FLASH_Erase_Page) for FLASH_Erase_Page
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_Erase) refers to stm32l0xx_hal_flash.o(.bss) for pFlash
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_Erase_IT) refers to stm32l0xx_hal_flash.o(i.FLASH_Erase_Page) for FLASH_Erase_Page
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_Erase_IT) refers to stm32l0xx_hal_flash.o(.bss) for pFlash
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_OBGetConfig) refers to stm32l0xx_hal_flash_ex.o(i.FLASH_OB_GetWRP) for FLASH_OB_GetWRP
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_OBGetConfig) refers to stm32l0xx_hal_flash_ex.o(i.FLASH_OB_GetRDP) for FLASH_OB_GetRDP
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_OBGetConfig) refers to stm32l0xx_hal_flash_ex.o(i.FLASH_OB_GetUser) for FLASH_OB_GetUser
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_OBGetConfig) refers to stm32l0xx_hal_flash_ex.o(i.FLASH_OB_GetBOR) for FLASH_OB_GetBOR
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_OBProgram) refers to stm32l0xx_hal_flash_ex.o(i.FLASH_OB_WRPConfig) for FLASH_OB_WRPConfig
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_OBProgram) refers to stm32l0xx_hal_flash_ex.o(i.FLASH_OB_RDP_LevelConfig) for FLASH_OB_RDP_LevelConfig
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_OBProgram) refers to stm32l0xx_hal_flash_ex.o(i.FLASH_OB_UserConfig) for FLASH_OB_UserConfig
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_OBProgram) refers to stm32l0xx_hal_flash_ex.o(i.FLASH_OB_BOR_LevelConfig) for FLASH_OB_BOR_LevelConfig
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_OBProgram) refers to stm32l0xx_hal_flash.o(.bss) for pFlash
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_OB_DeSelectPCROP) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_OB_SelectPCROP) refers to stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation) for FLASH_WaitForLastOperation
+    stm32l0xx_hal_gpio.o(i.HAL_GPIO_EXTI_IRQHandler) refers to bluenrg_interface.o(i.HAL_GPIO_EXTI_Callback) for HAL_GPIO_EXTI_Callback
+    stm32l0xx_hal_pwr.o(i.HAL_PWR_PVD_IRQHandler) refers to stm32l0xx_hal_pwr.o(i.HAL_PWR_PVDCallback) for HAL_PWR_PVDCallback
+    stm32l0xx_hal_rcc.o(i.HAL_RCC_ClockConfig) refers to stm32l0xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32l0xx_hal_rcc.o(i.HAL_RCC_ClockConfig) refers to stm32l0xx_hal.o(i.HAL_InitTick) for HAL_InitTick
+    stm32l0xx_hal_rcc.o(i.HAL_RCC_GetHCLKFreq) refers to stm32l0xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq) for HAL_RCC_GetSysClockFreq
+    stm32l0xx_hal_rcc.o(i.HAL_RCC_GetHCLKFreq) refers to stm32l0xx_hal_rcc.o(.data) for .data
+    stm32l0xx_hal_rcc.o(i.HAL_RCC_GetHCLKFreq) refers to system_stm32l0xx.o(.data) for SystemCoreClock
+    stm32l0xx_hal_rcc.o(i.HAL_RCC_GetPCLK1Freq) refers to stm32l0xx_hal_rcc.o(i.HAL_RCC_GetHCLKFreq) for HAL_RCC_GetHCLKFreq
+    stm32l0xx_hal_rcc.o(i.HAL_RCC_GetPCLK1Freq) refers to stm32l0xx_hal_rcc.o(.data) for .data
+    stm32l0xx_hal_rcc.o(i.HAL_RCC_GetPCLK2Freq) refers to stm32l0xx_hal_rcc.o(i.HAL_RCC_GetHCLKFreq) for HAL_RCC_GetHCLKFreq
+    stm32l0xx_hal_rcc.o(i.HAL_RCC_GetPCLK2Freq) refers to stm32l0xx_hal_rcc.o(.data) for .data
+    stm32l0xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq) refers to uidiv.o(.text) for __aeabi_uidivmod
+    stm32l0xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq) refers to stm32l0xx_hal_rcc.o(.constdata) for .constdata
+    stm32l0xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq) refers to stm32l0xx_hal_rcc.o(.data) for .data
+    stm32l0xx_hal_rcc.o(i.HAL_RCC_MCOConfig) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_Init) for HAL_GPIO_Init
+    stm32l0xx_hal_rcc.o(i.HAL_RCC_NMI_IRQHandler) refers to stm32l0xx_hal_rcc.o(i.HAL_RCC_CCSCallback) for HAL_RCC_CCSCallback
+    stm32l0xx_hal_rcc.o(i.HAL_RCC_OscConfig) refers to stm32l0xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32l0xx_hal_rcc_ex.o(i.HAL_RCCEx_CRSWaitSynchronization) refers to stm32l0xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32l0xx_hal_rcc_ex.o(i.HAL_RCCEx_PeriphCLKConfig) refers to stm32l0xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    stm32l0xx_hal_spi.o(i.HAL_SPI_DMAStop) refers to stm32l0xx_hal_dma.o(i.HAL_DMA_Abort) for HAL_DMA_Abort
+    stm32l0xx_hal_spi.o(i.HAL_SPI_DeInit) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_MspDeInit) for HAL_SPI_MspDeInit
+    stm32l0xx_hal_spi.o(i.HAL_SPI_IRQHandler) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_ErrorCallback) for HAL_SPI_ErrorCallback
+    stm32l0xx_hal_spi.o(i.HAL_SPI_Init) refers to stm32l0xx_nucleo_bluenrg.o(i.HAL_SPI_MspInit) for HAL_SPI_MspInit
+    stm32l0xx_hal_spi.o(i.HAL_SPI_Receive) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive) for HAL_SPI_TransmitReceive
+    stm32l0xx_hal_spi.o(i.HAL_SPI_Receive) refers to stm32l0xx_hal_spi.o(i.SPI_WaitOnFlagUntilTimeout) for SPI_WaitOnFlagUntilTimeout
+    stm32l0xx_hal_spi.o(i.HAL_SPI_Receive_DMA) refers to stm32l0xx_hal_dma.o(i.HAL_DMA_Start_IT) for HAL_DMA_Start_IT
+    stm32l0xx_hal_spi.o(i.HAL_SPI_Receive_DMA) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive_DMA) for HAL_SPI_TransmitReceive_DMA
+    stm32l0xx_hal_spi.o(i.HAL_SPI_Receive_DMA) refers to stm32l0xx_hal_spi.o(i.SPI_DMAHalfReceiveCplt) for SPI_DMAHalfReceiveCplt
+    stm32l0xx_hal_spi.o(i.HAL_SPI_Receive_DMA) refers to stm32l0xx_hal_spi.o(i.SPI_DMAReceiveCplt) for SPI_DMAReceiveCplt
+    stm32l0xx_hal_spi.o(i.HAL_SPI_Receive_DMA) refers to stm32l0xx_hal_spi.o(i.SPI_DMAError) for SPI_DMAError
+    stm32l0xx_hal_spi.o(i.HAL_SPI_Receive_IT) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive_IT) for HAL_SPI_TransmitReceive_IT
+    stm32l0xx_hal_spi.o(i.HAL_SPI_Receive_IT) refers to stm32l0xx_hal_spi.o(i.SPI_RxISR) for SPI_RxISR
+    stm32l0xx_hal_spi.o(i.HAL_SPI_Transmit) refers to stm32l0xx_hal_spi.o(i.SPI_WaitOnFlagUntilTimeout) for SPI_WaitOnFlagUntilTimeout
+    stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive) refers to stm32l0xx_hal_spi.o(i.SPI_WaitOnFlagUntilTimeout) for SPI_WaitOnFlagUntilTimeout
+    stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive_DMA) refers to stm32l0xx_hal_dma.o(i.HAL_DMA_Start_IT) for HAL_DMA_Start_IT
+    stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive_DMA) refers to stm32l0xx_hal_spi.o(i.SPI_DMAHalfTransmitReceiveCplt) for SPI_DMAHalfTransmitReceiveCplt
+    stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive_DMA) refers to stm32l0xx_hal_spi.o(i.SPI_DMATransmitReceiveCplt) for SPI_DMATransmitReceiveCplt
+    stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive_DMA) refers to stm32l0xx_hal_spi.o(i.SPI_DMAError) for SPI_DMAError
+    stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive_DMA) refers to stm32l0xx_hal_spi.o(i.SPI_DMAHalfReceiveCplt) for SPI_DMAHalfReceiveCplt
+    stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive_DMA) refers to stm32l0xx_hal_spi.o(i.SPI_DMAReceiveCplt) for SPI_DMAReceiveCplt
+    stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive_IT) refers to stm32l0xx_hal_spi.o(i.SPI_TxISR) for SPI_TxISR
+    stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive_IT) refers to stm32l0xx_hal_spi.o(i.SPI_2LinesRxISR) for SPI_2LinesRxISR
+    stm32l0xx_hal_spi.o(i.HAL_SPI_Transmit_DMA) refers to stm32l0xx_hal_dma.o(i.HAL_DMA_Start_IT) for HAL_DMA_Start_IT
+    stm32l0xx_hal_spi.o(i.HAL_SPI_Transmit_DMA) refers to stm32l0xx_hal_spi.o(i.SPI_DMAHalfTransmitCplt) for SPI_DMAHalfTransmitCplt
+    stm32l0xx_hal_spi.o(i.HAL_SPI_Transmit_DMA) refers to stm32l0xx_hal_spi.o(i.SPI_DMATransmitCplt) for SPI_DMATransmitCplt
+    stm32l0xx_hal_spi.o(i.HAL_SPI_Transmit_DMA) refers to stm32l0xx_hal_spi.o(i.SPI_DMAError) for SPI_DMAError
+    stm32l0xx_hal_spi.o(i.HAL_SPI_Transmit_IT) refers to stm32l0xx_hal_spi.o(i.SPI_TxISR) for SPI_TxISR
+    stm32l0xx_hal_spi.o(i.SPI_2LinesRxISR) refers to stm32l0xx_hal_spi.o(i.SPI_RxCloseIRQHandler) for SPI_RxCloseIRQHandler
+    stm32l0xx_hal_spi.o(i.SPI_DMAError) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_ErrorCallback) for HAL_SPI_ErrorCallback
+    stm32l0xx_hal_spi.o(i.SPI_DMAHalfReceiveCplt) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_RxHalfCpltCallback) for HAL_SPI_RxHalfCpltCallback
+    stm32l0xx_hal_spi.o(i.SPI_DMAHalfTransmitCplt) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_TxHalfCpltCallback) for HAL_SPI_TxHalfCpltCallback
+    stm32l0xx_hal_spi.o(i.SPI_DMAHalfTransmitReceiveCplt) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_TxRxHalfCpltCallback) for HAL_SPI_TxRxHalfCpltCallback
+    stm32l0xx_hal_spi.o(i.SPI_DMAReceiveCplt) refers to stm32l0xx_hal_spi.o(i.SPI_WaitOnFlagUntilTimeout) for SPI_WaitOnFlagUntilTimeout
+    stm32l0xx_hal_spi.o(i.SPI_DMAReceiveCplt) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_ErrorCallback) for HAL_SPI_ErrorCallback
+    stm32l0xx_hal_spi.o(i.SPI_DMAReceiveCplt) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_RxCpltCallback) for HAL_SPI_RxCpltCallback
+    stm32l0xx_hal_spi.o(i.SPI_DMATransmitCplt) refers to stm32l0xx_hal_spi.o(i.SPI_WaitOnFlagUntilTimeout) for SPI_WaitOnFlagUntilTimeout
+    stm32l0xx_hal_spi.o(i.SPI_DMATransmitCplt) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_ErrorCallback) for HAL_SPI_ErrorCallback
+    stm32l0xx_hal_spi.o(i.SPI_DMATransmitCplt) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_TxCpltCallback) for HAL_SPI_TxCpltCallback
+    stm32l0xx_hal_spi.o(i.SPI_DMATransmitReceiveCplt) refers to stm32l0xx_hal_spi.o(i.SPI_WaitOnFlagUntilTimeout) for SPI_WaitOnFlagUntilTimeout
+    stm32l0xx_hal_spi.o(i.SPI_DMATransmitReceiveCplt) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_ErrorCallback) for HAL_SPI_ErrorCallback
+    stm32l0xx_hal_spi.o(i.SPI_DMATransmitReceiveCplt) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_TxRxCpltCallback) for HAL_SPI_TxRxCpltCallback
+    stm32l0xx_hal_spi.o(i.SPI_RxCloseIRQHandler) refers to stm32l0xx_hal_spi.o(i.SPI_WaitOnFlagUntilTimeout) for SPI_WaitOnFlagUntilTimeout
+    stm32l0xx_hal_spi.o(i.SPI_RxCloseIRQHandler) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_ErrorCallback) for HAL_SPI_ErrorCallback
+    stm32l0xx_hal_spi.o(i.SPI_RxCloseIRQHandler) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_RxCpltCallback) for HAL_SPI_RxCpltCallback
+    stm32l0xx_hal_spi.o(i.SPI_RxCloseIRQHandler) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_TxRxCpltCallback) for HAL_SPI_TxRxCpltCallback
+    stm32l0xx_hal_spi.o(i.SPI_RxISR) refers to stm32l0xx_hal_spi.o(i.SPI_RxCloseIRQHandler) for SPI_RxCloseIRQHandler
+    stm32l0xx_hal_spi.o(i.SPI_TxCloseIRQHandler) refers to stm32l0xx_hal_spi.o(i.SPI_WaitOnFlagUntilTimeout) for SPI_WaitOnFlagUntilTimeout
+    stm32l0xx_hal_spi.o(i.SPI_TxCloseIRQHandler) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_ErrorCallback) for HAL_SPI_ErrorCallback
+    stm32l0xx_hal_spi.o(i.SPI_TxCloseIRQHandler) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_TxCpltCallback) for HAL_SPI_TxCpltCallback
+    stm32l0xx_hal_spi.o(i.SPI_TxCloseIRQHandler) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_TxRxCpltCallback) for HAL_SPI_TxRxCpltCallback
+    stm32l0xx_hal_spi.o(i.SPI_TxISR) refers to stm32l0xx_hal_spi.o(i.SPI_TxCloseIRQHandler) for SPI_TxCloseIRQHandler
+    stm32l0xx_hal_spi.o(i.SPI_WaitOnFlagUntilTimeout) refers to stm32l0xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    startup_stm32l053xx.o(RESET) refers to startup_stm32l053xx.o(STACK) for __initial_sp
+    startup_stm32l053xx.o(RESET) refers to startup_stm32l053xx.o(.text) for Reset_Handler
+    startup_stm32l053xx.o(RESET) refers to stm32l0xx_it.o(i.NMI_Handler) for NMI_Handler
+    startup_stm32l053xx.o(RESET) refers to stm32l0xx_it.o(i.HardFault_Handler) for HardFault_Handler
+    startup_stm32l053xx.o(RESET) refers to stm32l0xx_it.o(i.SVC_Handler) for SVC_Handler
+    startup_stm32l053xx.o(RESET) refers to stm32l0xx_it.o(i.DebugMon_Handler) for DebugMon_Handler
+    startup_stm32l053xx.o(RESET) refers to stm32l0xx_it.o(i.PendSV_Handler) for PendSV_Handler
+    startup_stm32l053xx.o(RESET) refers to stm32l0xx_it.o(i.SysTick_Handler) for SysTick_Handler
+    startup_stm32l053xx.o(RESET) refers to stm32l0xx_it.o(i.EXTI0_1_IRQHandler) for EXTI0_1_IRQHandler
+    startup_stm32l053xx.o(RESET) refers to stm32l0xx_it.o(i.EXTI4_15_IRQHandler) for EXTI4_15_IRQHandler
+    startup_stm32l053xx.o(.text) refers to system_stm32l0xx.o(i.SystemInit) for SystemInit
+    startup_stm32l053xx.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    main.o(i.SystemClock_Config) refers to stm32l0xx_hal_rcc.o(i.HAL_RCC_OscConfig) for HAL_RCC_OscConfig
+    main.o(i.SystemClock_Config) refers to stm32l0xx_hal_rcc.o(i.HAL_RCC_ClockConfig) for HAL_RCC_ClockConfig
+    main.o(i.User_Process) refers to sample_service.o(i.Make_Connection) for Make_Connection
+    main.o(i.User_Process) refers to sample_service.o(i.enableNotification) for enableNotification
+    main.o(i.User_Process) refers to stm32l0xx_nucleo.o(i.BSP_PB_GetState) for BSP_PB_GetState
+    main.o(i.User_Process) refers to memcpy.o(.text) for __aeabi_memcpy4
+    main.o(i.User_Process) refers to sample_service.o(i.sendData) for sendData
+    main.o(i.User_Process) refers to sample_service.o(.data) for set_connectable
+    main.o(i.User_Process) refers to main.o(.data) for .data
+    main.o(i.main) refers to stm32l0xx_hal.o(i.HAL_Init) for HAL_Init
+    main.o(i.main) refers to extra_led.o(i.Extra_LED_Init) for Extra_LED_Init
+    main.o(i.main) refers to stm32l0xx_nucleo.o(i.BSP_LED_Init) for BSP_LED_Init
+    main.o(i.main) refers to stm32l0xx_nucleo.o(i.BSP_PB_Init) for BSP_PB_Init
+    main.o(i.main) refers to main.o(i.SystemClock_Config) for SystemClock_Config
+    main.o(i.main) refers to stm32_bluenrg_ble.o(i.BNRG_SPI_Init) for BNRG_SPI_Init
+    main.o(i.main) refers to hci.o(i.HCI_Init) for HCI_Init
+    main.o(i.main) refers to stm32_bluenrg_ble.o(i.BlueNRG_RST) for BlueNRG_RST
+    main.o(i.main) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    main.o(i.main) refers to bluenrg_hci.o(i.aci_hal_write_config_data) for aci_hal_write_config_data
+    main.o(i.main) refers to bluenrg_hci.o(i.aci_gatt_init) for aci_gatt_init
+    main.o(i.main) refers to bluenrg_hci.o(i.aci_gap_init) for aci_gap_init
+    main.o(i.main) refers to bluenrg_hci.o(i.aci_gap_set_auth_requirement) for aci_gap_set_auth_requirement
+    main.o(i.main) refers to sample_service.o(i.Add_Sample_Service) for Add_Sample_Service
+    main.o(i.main) refers to bluenrg_hci.o(i.aci_hal_set_tx_power_level) for aci_hal_set_tx_power_level
+    main.o(i.main) refers to hci.o(i.HCI_Process) for HCI_Process
+    main.o(i.main) refers to main.o(i.User_Process) for User_Process
+    main.o(i.main) refers to main.o(.data) for .data
+    stm32l0xx_it.o(i.EXTI0_1_IRQHandler) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_EXTI_IRQHandler) for HAL_GPIO_EXTI_IRQHandler
+    stm32l0xx_it.o(i.EXTI4_15_IRQHandler) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_EXTI_IRQHandler) for HAL_GPIO_EXTI_IRQHandler
+    stm32l0xx_it.o(i.EXTI4_15_IRQHandler) refers to stm32l0xx_it.o(.data) for .data
+    stm32l0xx_it.o(i.SPIx_IRQHandler) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_IRQHandler) for HAL_SPI_IRQHandler
+    stm32l0xx_it.o(i.SPIx_IRQHandler) refers to stm32_bluenrg_ble.o(.bss) for SpiHandle
+    stm32l0xx_it.o(i.SysTick_Handler) refers to stm32l0xx_hal.o(i.HAL_IncTick) for HAL_IncTick
+    bluenrg_interface.o(i.HAL_GPIO_EXTI_Callback) refers to list.o(i.list_is_empty) for list_is_empty
+    bluenrg_interface.o(i.HAL_GPIO_EXTI_Callback) refers to list.o(i.list_remove_head) for list_remove_head
+    bluenrg_interface.o(i.HAL_GPIO_EXTI_Callback) refers to stm32_bluenrg_ble.o(i.BlueNRG_SPI_Read_All) for BlueNRG_SPI_Read_All
+    bluenrg_interface.o(i.HAL_GPIO_EXTI_Callback) refers to hci.o(i.HCI_Input) for HCI_Input
+    bluenrg_interface.o(i.HAL_GPIO_EXTI_Callback) refers to list.o(i.list_insert_head) for list_insert_head
+    bluenrg_interface.o(i.HAL_GPIO_EXTI_Callback) refers to stm32_bluenrg_ble.o(i.Clear_SPI_EXTI_Flag) for Clear_SPI_EXTI_Flag
+    bluenrg_interface.o(i.HAL_GPIO_EXTI_Callback) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_ReadPin) for HAL_GPIO_ReadPin
+    bluenrg_interface.o(i.HAL_GPIO_EXTI_Callback) refers to hci.o(.data) for hciReadPktPool
+    bluenrg_interface.o(i.HAL_GPIO_EXTI_Callback) refers to stm32_bluenrg_ble.o(.bss) for SpiHandle
+    bluenrg_interface.o(i.Hal_Write_Serial) refers to uidiv.o(.text) for __aeabi_uidivmod
+    bluenrg_interface.o(i.Hal_Write_Serial) refers to gp_timer.o(i.Timer_Set) for Timer_Set
+    bluenrg_interface.o(i.Hal_Write_Serial) refers to stm32_bluenrg_ble.o(i.BlueNRG_SPI_Write) for BlueNRG_SPI_Write
+    bluenrg_interface.o(i.Hal_Write_Serial) refers to gp_timer.o(i.Timer_Expired) for Timer_Expired
+    bluenrg_interface.o(i.Hal_Write_Serial) refers to clock.o(.constdata) for CLOCK_SECOND
+    bluenrg_interface.o(i.Hal_Write_Serial) refers to stm32_bluenrg_ble.o(.bss) for SpiHandle
+    clock.o(i.Clock_Time) refers to stm32l0xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    clock.o(i.Clock_Wait) refers to stm32l0xx_hal.o(i.HAL_Delay) for HAL_Delay
+    extra_led.o(i.Extra_LED_Init) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_Init) for HAL_GPIO_Init
+    extra_led.o(i.Extra_LED_Init) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    extra_led.o(i.Extra_LED_Off) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    extra_led.o(i.Extra_LED_On) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    extra_led.o(i.Extra_LED_Toggle) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_TogglePin) for HAL_GPIO_TogglePin
+    osal.o(i.Osal_MemCpy) refers to memcpy.o(.text) for memcpy
+    osal.o(i.Osal_MemSet) refers to memset.o(.text) for memset
+    sample_service.o(i.Add_Sample_Service) refers to bluenrg_hci.o(i.aci_gatt_add_serv) for aci_gatt_add_serv
+    sample_service.o(i.Add_Sample_Service) refers to bluenrg_hci.o(i.aci_gatt_add_char) for aci_gatt_add_char
+    sample_service.o(i.Add_Sample_Service) refers to sample_service.o(.data) for .data
+    sample_service.o(i.Attribute_Modified_CB) refers to sample_service.o(i.receiveData) for receiveData
+    sample_service.o(i.Attribute_Modified_CB) refers to sample_service.o(.data) for .data
+    sample_service.o(i.GAP_ConnectionComplete_CB) refers to extra_led.o(i.Extra_LED_On) for Extra_LED_On
+    sample_service.o(i.GAP_ConnectionComplete_CB) refers to sample_service.o(.data) for .data
+    sample_service.o(i.GAP_DisconnectionComplete_CB) refers to extra_led.o(i.Extra_LED_Off) for Extra_LED_Off
+    sample_service.o(i.GAP_DisconnectionComplete_CB) refers to sample_service.o(.data) for .data
+    sample_service.o(i.GATT_Notification_CB) refers to sample_service.o(i.receiveData) for receiveData
+    sample_service.o(i.HCI_Event_CB) refers to sample_service.o(i.GATT_Notification_CB) for GATT_Notification_CB
+    sample_service.o(i.HCI_Event_CB) refers to sample_service.o(i.GAP_DisconnectionComplete_CB) for GAP_DisconnectionComplete_CB
+    sample_service.o(i.HCI_Event_CB) refers to sample_service.o(i.GAP_ConnectionComplete_CB) for GAP_ConnectionComplete_CB
+    sample_service.o(i.HCI_Event_CB) refers to sample_service.o(i.Attribute_Modified_CB) for Attribute_Modified_CB
+    sample_service.o(i.Make_Connection) refers to hci.o(i.hci_le_set_scan_resp_data) for hci_le_set_scan_resp_data
+    sample_service.o(i.Make_Connection) refers to bluenrg_hci.o(i.aci_gap_set_discoverable) for aci_gap_set_discoverable
+    sample_service.o(i.Make_Connection) refers to bluenrg_hci.o(i.aci_gap_create_connection) for aci_gap_create_connection
+    sample_service.o(i.Make_Connection) refers to clock.o(i.Clock_Wait) for Clock_Wait
+    sample_service.o(i.Make_Connection) refers to main.o(.data) for BLE_Role
+    sample_service.o(i.enableNotification) refers to gp_timer.o(i.Timer_Set) for Timer_Set
+    sample_service.o(i.enableNotification) refers to gp_timer.o(i.Timer_Expired) for Timer_Expired
+    sample_service.o(i.enableNotification) refers to bluenrg_hci.o(i.aci_gatt_write_charac_descriptor) for aci_gatt_write_charac_descriptor
+    sample_service.o(i.enableNotification) refers to clock.o(.constdata) for CLOCK_SECOND
+    sample_service.o(i.enableNotification) refers to sample_service.o(.data) for .data
+    sample_service.o(i.receiveData) refers to stm32l0xx_nucleo.o(i.BSP_LED_Toggle) for BSP_LED_Toggle
+    sample_service.o(i.sendData) refers to bluenrg_hci.o(i.aci_gatt_write_without_response) for aci_gatt_write_without_response
+    sample_service.o(i.sendData) refers to bluenrg_hci.o(i.aci_gatt_update_char_value) for aci_gatt_update_char_value
+    sample_service.o(i.sendData) refers to main.o(.data) for BLE_Role
+    sample_service.o(i.sendData) refers to sample_service.o(.data) for .data
+    stm32_bluenrg_ble.o(i.BNRG_SPI_Init) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_Init) for HAL_SPI_Init
+    stm32_bluenrg_ble.o(i.BNRG_SPI_Init) refers to stm32_bluenrg_ble.o(.bss) for .bss
+    stm32_bluenrg_ble.o(i.BlueNRG_RST) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    stm32_bluenrg_ble.o(i.BlueNRG_RST) refers to stm32l0xx_hal.o(i.HAL_Delay) for HAL_Delay
+    stm32_bluenrg_ble.o(i.BlueNRG_SPI_Read_All) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    stm32_bluenrg_ble.o(i.BlueNRG_SPI_Read_All) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive) for HAL_SPI_TransmitReceive
+    stm32_bluenrg_ble.o(i.BlueNRG_SPI_Write) refers to stm32_bluenrg_ble.o(i.Disable_SPI_IRQ) for Disable_SPI_IRQ
+    stm32_bluenrg_ble.o(i.BlueNRG_SPI_Write) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    stm32_bluenrg_ble.o(i.BlueNRG_SPI_Write) refers to stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive) for HAL_SPI_TransmitReceive
+    stm32_bluenrg_ble.o(i.BlueNRG_SPI_Write) refers to stm32_bluenrg_ble.o(i.Enable_SPI_IRQ) for Enable_SPI_IRQ
+    stm32_bluenrg_ble.o(i.Clear_SPI_IRQ) refers to stm32l0xx_hal_cortex.o(i.HAL_NVIC_ClearPendingIRQ) for HAL_NVIC_ClearPendingIRQ
+    stm32_bluenrg_ble.o(i.Disable_SPI_IRQ) refers to stm32l0xx_hal_cortex.o(i.HAL_NVIC_DisableIRQ) for HAL_NVIC_DisableIRQ
+    stm32_bluenrg_ble.o(i.Enable_SPI_IRQ) refers to stm32l0xx_hal_cortex.o(i.HAL_NVIC_EnableIRQ) for HAL_NVIC_EnableIRQ
+    stm32_bluenrg_ble.o(i.set_irq_as_input) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_Init) for HAL_GPIO_Init
+    stm32_bluenrg_ble.o(i.set_irq_as_output) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_Init) for HAL_GPIO_Init
+    stm32_bluenrg_ble.o(i.set_irq_as_output) refers to stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    hci.o(i.HCI_Init) refers to list.o(i.list_init_head) for list_init_head
+    hci.o(i.HCI_Init) refers to list.o(i.list_insert_tail) for list_insert_tail
+    hci.o(i.HCI_Init) refers to hci.o(.data) for .data
+    hci.o(i.HCI_Init) refers to hci.o(.bss) for .bss
+    hci.o(i.HCI_Input) refers to hci.o(i.enqueue_packet) for enqueue_packet
+    hci.o(i.HCI_Input) refers to hci.o(.data) for .data
+    hci.o(i.HCI_Process) refers to stm32_bluenrg_ble.o(i.Disable_SPI_IRQ) for Disable_SPI_IRQ
+    hci.o(i.HCI_Process) refers to list.o(i.list_is_empty) for list_is_empty
+    hci.o(i.HCI_Process) refers to list.o(i.list_remove_head) for list_remove_head
+    hci.o(i.HCI_Process) refers to stm32_bluenrg_ble.o(i.Enable_SPI_IRQ) for Enable_SPI_IRQ
+    hci.o(i.HCI_Process) refers to sample_service.o(i.HCI_Event_CB) for HCI_Event_CB
+    hci.o(i.HCI_Process) refers to list.o(i.list_insert_tail) for list_insert_tail
+    hci.o(i.HCI_Process) refers to hci.o(.data) for .data
+    hci.o(i.enqueue_packet) refers to list.o(i.list_insert_tail) for list_insert_tail
+    hci.o(i.enqueue_packet) refers to hci.o(.data) for .data
+    hci.o(i.hci_disconnect) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_disconnect) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_add_device_to_white_list) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    hci.o(i.hci_le_add_device_to_white_list) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_add_device_to_white_list) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_clear_white_list) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_clear_white_list) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_create_connection) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_create_connection) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    hci.o(i.hci_le_create_connection) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_encrypt) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_encrypt) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    hci.o(i.hci_le_encrypt) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_ltk_request_neg_reply) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_ltk_request_neg_reply) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_ltk_request_reply) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_ltk_request_reply) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    hci.o(i.hci_le_ltk_request_reply) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_rand) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_rand) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_rand) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    hci.o(i.hci_le_read_advertising_channel_tx_power) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_read_advertising_channel_tx_power) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_read_buffer_size) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_read_buffer_size) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_read_channel_map) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_read_channel_map) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_read_channel_map) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    hci.o(i.hci_le_read_local_supported_features) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_read_local_supported_features) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_read_local_supported_features) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    hci.o(i.hci_le_read_local_version) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_read_local_version) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_read_supported_states) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_read_supported_states) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_read_supported_states) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    hci.o(i.hci_le_read_white_list_size) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_read_white_list_size) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_receiver_test) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_receiver_test) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_remove_device_from_white_list) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    hci.o(i.hci_le_remove_device_from_white_list) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_remove_device_from_white_list) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_set_advertise_enable) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_set_advertise_enable) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_set_advertising_data) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_set_advertising_data) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    hci.o(i.hci_le_set_advertising_data) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_set_advertising_parameters) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_set_advertising_parameters) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    hci.o(i.hci_le_set_advertising_parameters) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_set_random_address) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_set_random_address) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    hci.o(i.hci_le_set_random_address) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_set_scan_resp_data) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_set_scan_resp_data) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    hci.o(i.hci_le_set_scan_resp_data) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_test_end) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_test_end) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_le_transmitter_test) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_le_transmitter_test) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_read_bd_addr) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_read_bd_addr) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_read_bd_addr) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    hci.o(i.hci_read_rssi) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_read_rssi) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_read_transmit_power_level) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_read_transmit_power_level) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_reset) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    hci.o(i.hci_reset) refers to hci.o(i.hci_send_req) for hci_send_req
+    hci.o(i.hci_send_cmd) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    hci.o(i.hci_send_cmd) refers to hci.o(i.hci_write) for hci_write
+    hci.o(i.hci_send_req) refers to uidiv.o(.text) for __aeabi_uidivmod
+    hci.o(i.hci_send_req) refers to hci.o(i.hci_set_packet_complete_callback) for hci_set_packet_complete_callback
+    hci.o(i.hci_send_req) refers to hci.o(i.hci_send_cmd) for hci_send_cmd
+    hci.o(i.hci_send_req) refers to gp_timer.o(i.Timer_Set) for Timer_Set
+    hci.o(i.hci_send_req) refers to gp_timer.o(i.Timer_Expired) for Timer_Expired
+    hci.o(i.hci_send_req) refers to stm32_bluenrg_ble.o(i.Enable_SPI_IRQ) for Enable_SPI_IRQ
+    hci.o(i.hci_send_req) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    hci.o(i.hci_send_req) refers to clock.o(.constdata) for CLOCK_SECOND
+    hci.o(i.hci_send_req) refers to hci.o(.data) for .data
+    hci.o(i.hci_send_req) refers to hci.o(i.new_hci_event) for new_hci_event
+    hci.o(i.hci_set_packet_complete_callback) refers to hci.o(.data) for .data
+    hci.o(i.hci_write) refers to bluenrg_interface.o(i.Hal_Write_Serial) for Hal_Write_Serial
+    hci.o(i.new_hci_event) refers to stm32_bluenrg_ble.o(i.Disable_SPI_IRQ) for Disable_SPI_IRQ
+    hci.o(i.new_hci_event) refers to hci.o(.data) for .data
+    bluenrg_hci.o(i.aci_erase_blue_flag) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_erase_blue_flag) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gap_create_connection) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    bluenrg_hci.o(i.aci_gap_create_connection) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gap_create_connection) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gap_init) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gap_init) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gap_set_auth_requirement) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    bluenrg_hci.o(i.aci_gap_set_auth_requirement) refers to uwrite4.o(.text) for __aeabi_uwrite4
+    bluenrg_hci.o(i.aci_gap_set_auth_requirement) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gap_set_auth_requirement) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gap_set_discoverable) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    bluenrg_hci.o(i.aci_gap_set_discoverable) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gap_set_discoverable) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gap_set_non_discoverable) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gap_set_non_discoverable) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gap_start_auto_conn_establishment) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    bluenrg_hci.o(i.aci_gap_start_auto_conn_establishment) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gap_start_auto_conn_establishment) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gap_start_general_discovery_proc) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gap_start_general_discovery_proc) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gap_start_limited_discovery_proc) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gap_start_limited_discovery_proc) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gap_terminate) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gap_terminate) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gap_terminate_gap_procedure) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gap_terminate_gap_procedure) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gap_update_adv_data) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    bluenrg_hci.o(i.aci_gap_update_adv_data) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gap_update_adv_data) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gatt_add_char) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    bluenrg_hci.o(i.aci_gatt_add_char) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gatt_add_char) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gatt_add_char_desc) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    bluenrg_hci.o(i.aci_gatt_add_char_desc) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gatt_add_char_desc) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gatt_add_serv) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    bluenrg_hci.o(i.aci_gatt_add_serv) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gatt_add_serv) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gatt_allow_read) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gatt_allow_read) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gatt_disc_all_charac_descriptors) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gatt_disc_all_charac_descriptors) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gatt_disc_all_charac_of_serv) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gatt_disc_all_charac_of_serv) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gatt_disc_all_prim_services) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gatt_disc_all_prim_services) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gatt_find_included_services) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gatt_find_included_services) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gatt_init) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gatt_init) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gatt_read_charac_val) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gatt_read_charac_val) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gatt_read_long_charac_val) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gatt_read_long_charac_val) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gatt_set_desc_value) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    bluenrg_hci.o(i.aci_gatt_set_desc_value) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gatt_set_desc_value) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gatt_update_char_value) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    bluenrg_hci.o(i.aci_gatt_update_char_value) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gatt_update_char_value) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gatt_write_charac_descriptor) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    bluenrg_hci.o(i.aci_gatt_write_charac_descriptor) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gatt_write_charac_descriptor) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gatt_write_charac_value) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    bluenrg_hci.o(i.aci_gatt_write_charac_value) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gatt_write_charac_value) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gatt_write_response) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    bluenrg_hci.o(i.aci_gatt_write_response) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gatt_write_response) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_gatt_write_without_response) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    bluenrg_hci.o(i.aci_gatt_write_without_response) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_gatt_write_without_response) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_get_updater_buffer_size) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_get_updater_buffer_size) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_get_updater_version) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_get_updater_version) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_hal_set_tx_power_level) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_hal_set_tx_power_level) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_hal_tone_start) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_hal_tone_start) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_hal_write_config_data) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    bluenrg_hci.o(i.aci_hal_write_config_data) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_hal_write_config_data) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_l2cap_connection_parameter_update_request) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_l2cap_connection_parameter_update_request) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_reset_blue_flag) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_reset_blue_flag) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_updater_calc_crc) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_updater_calc_crc) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_updater_calc_crc) refers to uread4.o(.text) for __aeabi_uread4
+    bluenrg_hci.o(i.aci_updater_erase_sector) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_updater_erase_sector) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_updater_hw_version) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_updater_hw_version) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_updater_program_data_block) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    bluenrg_hci.o(i.aci_updater_program_data_block) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_updater_program_data_block) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_updater_read_data_block) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_updater_read_data_block) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_updater_read_data_block) refers to osal.o(i.Osal_MemCpy) for Osal_MemCpy
+    bluenrg_hci.o(i.aci_updater_reboot) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_updater_reboot) refers to hci.o(i.hci_send_req) for hci_send_req
+    bluenrg_hci.o(i.aci_updater_start) refers to osal.o(i.Osal_MemSet) for Osal_MemSet
+    bluenrg_hci.o(i.aci_updater_start) refers to hci.o(i.hci_send_req) for hci_send_req
+    gp_timer.o(i.Timer_Expired) refers to clock.o(i.Clock_Time) for Clock_Time
+    gp_timer.o(i.Timer_Remaining) refers to clock.o(i.Clock_Time) for Clock_Time
+    gp_timer.o(i.Timer_Restart) refers to clock.o(i.Clock_Time) for Clock_Time
+    gp_timer.o(i.Timer_Set) refers to clock.o(i.Clock_Time) for Clock_Time
+    list.o(i.list_remove_head) refers to list.o(i.list_remove_node) for list_remove_node
+    list.o(i.list_remove_tail) refers to list.o(i.list_remove_node) for list_remove_node
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_stm32l053xx.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_stm32l053xx.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing stm32l0xx_nucleo.o(.rev16_text), (4 bytes).
+    Removing stm32l0xx_nucleo.o(.revsh_text), (4 bytes).
+    Removing stm32l0xx_nucleo.o(i.ADCx_Init), (76 bytes).
+    Removing stm32l0xx_nucleo.o(i.ADCx_MspInit), (52 bytes).
+    Removing stm32l0xx_nucleo.o(i.BSP_GetVersion), (6 bytes).
+    Removing stm32l0xx_nucleo.o(i.BSP_JOY_GetState), (132 bytes).
+    Removing stm32l0xx_nucleo.o(i.BSP_JOY_Init), (40 bytes).
+    Removing stm32l0xx_nucleo.o(i.BSP_LED_Off), (32 bytes).
+    Removing stm32l0xx_nucleo.o(i.BSP_LED_On), (32 bytes).
+    Removing stm32l0xx_nucleo.o(i.LCD_Delay), (8 bytes).
+    Removing stm32l0xx_nucleo.o(i.LCD_IO_Init), (88 bytes).
+    Removing stm32l0xx_nucleo.o(i.LCD_IO_WriteData), (52 bytes).
+    Removing stm32l0xx_nucleo.o(i.LCD_IO_WriteReg), (52 bytes).
+    Removing stm32l0xx_nucleo.o(i.SD_IO_Init), (80 bytes).
+    Removing stm32l0xx_nucleo.o(i.SD_IO_ReadByte), (10 bytes).
+    Removing stm32l0xx_nucleo.o(i.SD_IO_WaitResponse), (40 bytes).
+    Removing stm32l0xx_nucleo.o(i.SD_IO_WriteByte), (8 bytes).
+    Removing stm32l0xx_nucleo.o(i.SD_IO_WriteCmd), (76 bytes).
+    Removing stm32l0xx_nucleo.o(i.SD_IO_WriteDummy), (24 bytes).
+    Removing stm32l0xx_nucleo.o(i.SPIx_Error), (20 bytes).
+    Removing stm32l0xx_nucleo.o(i.SPIx_Init), (80 bytes).
+    Removing stm32l0xx_nucleo.o(i.SPIx_MspInit), (96 bytes).
+    Removing stm32l0xx_nucleo.o(i.SPIx_Read), (48 bytes).
+    Removing stm32l0xx_nucleo.o(i.SPIx_Write), (36 bytes).
+    Removing stm32l0xx_nucleo.o(.bss), (176 bytes).
+    Removing stm32l0xx_nucleo_bluenrg.o(.rev16_text), (4 bytes).
+    Removing stm32l0xx_nucleo_bluenrg.o(.revsh_text), (4 bytes).
+    Removing system_stm32l0xx.o(.rev16_text), (4 bytes).
+    Removing system_stm32l0xx.o(.revsh_text), (4 bytes).
+    Removing system_stm32l0xx.o(i.SystemCoreClockUpdate), (172 bytes).
+    Removing stm32l0xx_hal.o(.rev16_text), (4 bytes).
+    Removing stm32l0xx_hal.o(.revsh_text), (4 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_ADC_EnableBufferSensor_Cmd), (36 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_ADC_EnableBuffer_Cmd), (32 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_COMP_EnableBuffer_Cmd), (36 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_DBG_LowPowerConfig), (28 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_DeInit), (40 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_DisableDBGSleepMode), (16 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_DisableDBGStandbyMode), (16 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_DisableDBGStopMode), (16 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_EnableDBGSleepMode), (16 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_EnableDBGStandbyMode), (16 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_EnableDBGStopMode), (16 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_GetBootMode), (16 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_GetDEVID), (16 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_GetHalVersion), (8 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_GetREVID), (12 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_I2CFastModePlusConfig), (28 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_Lock_Cmd), (32 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_MspDeInit), (2 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_RC48_EnableBuffer_Cmd), (36 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_ResumeTick), (16 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_SuspendTick), (16 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_VREFINT_Cmd), (32 bytes).
+    Removing stm32l0xx_hal.o(i.HAL_VREFINT_OutputSelect), (24 bytes).
+    Removing stm32l0xx_hal_adc.o(.rev16_text), (4 bytes).
+    Removing stm32l0xx_hal_adc.o(.revsh_text), (4 bytes).
+    Removing stm32l0xx_hal_adc.o(i.ADC_ConversionStop), (84 bytes).
+    Removing stm32l0xx_hal_adc.o(i.ADC_DMAConvCplt), (16 bytes).
+    Removing stm32l0xx_hal_adc.o(i.ADC_DMAError), (24 bytes).
+    Removing stm32l0xx_hal_adc.o(i.ADC_DMAHalfConvCplt), (10 bytes).
+    Removing stm32l0xx_hal_adc.o(i.ADC_Disable), (110 bytes).
+    Removing stm32l0xx_hal_adc.o(i.ADC_Enable), (116 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_AnalogWDGConfig), (140 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_ConfigChannel), (96 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_ConvCpltCallback), (2 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_ConvHalfCpltCallback), (2 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_DeInit), (216 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_ErrorCallback), (2 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_GetError), (4 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_GetState), (6 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_GetValue), (6 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_IRQHandler), (186 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_Init), (428 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_LevelOutOfWindowCallback), (2 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_MspDeInit), (2 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_MspInit), (2 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_PollForConversion), (90 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_PollForEvent), (90 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_Start), (56 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_Start_DMA), (120 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_Start_IT), (112 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_Stop), (62 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_Stop_DMA), (102 bytes).
+    Removing stm32l0xx_hal_adc.o(i.HAL_ADC_Stop_IT), (72 bytes).
+    Removing stm32l0xx_hal_adc_ex.o(.rev16_text), (4 bytes).
+    Removing stm32l0xx_hal_adc_ex.o(.revsh_text), (4 bytes).
+    Removing stm32l0xx_hal_adc_ex.o(i.HAL_ADCEx_Calibration_GetValue), (12 bytes).
+    Removing stm32l0xx_hal_adc_ex.o(i.HAL_ADCEx_Calibration_SetValue), (84 bytes).
+    Removing stm32l0xx_hal_adc_ex.o(i.HAL_ADCEx_Calibration_Start), (164 bytes).
+    Removing stm32l0xx_hal_cortex.o(.rev16_text), (4 bytes).
+    Removing stm32l0xx_hal_cortex.o(.revsh_text), (4 bytes).
+    Removing stm32l0xx_hal_cortex.o(i.HAL_NVIC_ClearPendingIRQ), (20 bytes).
+    Removing stm32l0xx_hal_cortex.o(i.HAL_NVIC_GetPendingIRQ), (28 bytes).
+    Removing stm32l0xx_hal_cortex.o(i.HAL_NVIC_SetPendingIRQ), (20 bytes).
+    Removing stm32l0xx_hal_cortex.o(i.HAL_NVIC_SystemReset), (24 bytes).
+    Removing stm32l0xx_hal_cortex.o(i.HAL_SYSTICK_CLKSourceConfig), (28 bytes).
+    Removing stm32l0xx_hal_cortex.o(i.HAL_SYSTICK_Callback), (2 bytes).
+    Removing stm32l0xx_hal_cortex.o(i.HAL_SYSTICK_IRQHandler), (8 bytes).
+    Removing stm32l0xx_hal_dma.o(.rev16_text), (4 bytes).
+    Removing stm32l0xx_hal_dma.o(.revsh_text), (4 bytes).
+    Removing stm32l0xx_hal_dma.o(i.DMA_SetConfig), (32 bytes).
+    Removing stm32l0xx_hal_dma.o(i.HAL_DMA_Abort), (76 bytes).
+    Removing stm32l0xx_hal_dma.o(i.HAL_DMA_DeInit), (496 bytes).
+    Removing stm32l0xx_hal_dma.o(i.HAL_DMA_GetError), (4 bytes).
+    Removing stm32l0xx_hal_dma.o(i.HAL_DMA_GetState), (6 bytes).
+    Removing stm32l0xx_hal_dma.o(i.HAL_DMA_IRQHandler), (640 bytes).
+    Removing stm32l0xx_hal_dma.o(i.HAL_DMA_Init), (276 bytes).
+    Removing stm32l0xx_hal_dma.o(i.HAL_DMA_PollForTransfer), (632 bytes).
+    Removing stm32l0xx_hal_dma.o(i.HAL_DMA_Start), (52 bytes).
+    Removing stm32l0xx_hal_dma.o(i.HAL_DMA_Start_IT), (80 bytes).
+    Removing stm32l0xx_hal_flash.o(.rev16_text), (4 bytes).
+    Removing stm32l0xx_hal_flash.o(.revsh_text), (4 bytes).
+    Removing stm32l0xx_hal_flash.o(i.FLASH_Erase_Page), (28 bytes).
+    Removing stm32l0xx_hal_flash.o(i.FLASH_Program_Word), (20 bytes).
+    Removing stm32l0xx_hal_flash.o(i.FLASH_SetErrorCode), (84 bytes).
+    Removing stm32l0xx_hal_flash.o(i.FLASH_WaitForLastOperation), (108 bytes).
+    Removing stm32l0xx_hal_flash.o(i.HAL_FLASH_EndOfOperationCallback), (2 bytes).
+    Removing stm32l0xx_hal_flash.o(i.HAL_FLASH_GetError), (12 bytes).
+    Removing stm32l0xx_hal_flash.o(i.HAL_FLASH_IRQHandler), (252 bytes).
+    Removing stm32l0xx_hal_flash.o(i.HAL_FLASH_Lock), (20 bytes).
+    Removing stm32l0xx_hal_flash.o(i.HAL_FLASH_OB_Launch), (32 bytes).
+    Removing stm32l0xx_hal_flash.o(i.HAL_FLASH_OB_Lock), (20 bytes).
+    Removing stm32l0xx_hal_flash.o(i.HAL_FLASH_OB_Unlock), (60 bytes).
+    Removing stm32l0xx_hal_flash.o(i.HAL_FLASH_OperationErrorCallback), (2 bytes).
+    Removing stm32l0xx_hal_flash.o(i.HAL_FLASH_Program), (84 bytes).
+    Removing stm32l0xx_hal_flash.o(i.HAL_FLASH_Program_IT), (84 bytes).
+    Removing stm32l0xx_hal_flash.o(i.HAL_FLASH_Unlock), (60 bytes).
+    Removing stm32l0xx_hal_flash.o(.bss), (20 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(.rev16_text), (4 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(.revsh_text), (4 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.FLASH_DATAEEPROM_FastProgramByte), (44 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.FLASH_DATAEEPROM_FastProgramHalfWord), (44 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.FLASH_DATAEEPROM_FastProgramWord), (44 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.FLASH_DATAEEPROM_ProgramByte), (44 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.FLASH_DATAEEPROM_ProgramHalfWord), (44 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.FLASH_DATAEEPROM_ProgramWord), (44 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.FLASH_OB_BOR_LevelConfig), (56 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.FLASH_OB_BootConfig), (56 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.FLASH_OB_GetBOR), (16 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.FLASH_OB_GetRDP), (20 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.FLASH_OB_GetUser), (16 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.FLASH_OB_GetWRP), (12 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.FLASH_OB_PCROPConfig), (72 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.FLASH_OB_PCROPSelectionConfig), (44 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.FLASH_OB_RDP_LevelConfig), (48 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.FLASH_OB_UserConfig), (64 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.FLASH_OB_WRPConfig), (72 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_AdvOBGetConfig), (32 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_AdvOBProgram), (64 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_DATAEEPROM_Erase), (22 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_DATAEEPROM_Lock), (20 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_DATAEEPROM_Program), (156 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_DATAEEPROM_Unlock), (36 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_Erase), (116 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_Erase_IT), (84 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_OBGetConfig), (34 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_OBProgram), (112 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_OB_DeSelectPCROP), (40 bytes).
+    Removing stm32l0xx_hal_flash_ex.o(i.HAL_FLASHEx_OB_SelectPCROP), (44 bytes).
+    Removing stm32l0xx_hal_gpio.o(.rev16_text), (4 bytes).
+    Removing stm32l0xx_hal_gpio.o(.revsh_text), (4 bytes).
+    Removing stm32l0xx_hal_gpio.o(i.HAL_GPIO_DeInit), (136 bytes).
+    Removing stm32l0xx_hal_gpio.o(i.HAL_GPIO_EXTI_Callback), (2 bytes).
+    Removing stm32l0xx_hal_gpio.o(i.HAL_GPIO_LockPin), (38 bytes).
+    Removing stm32l0xx_hal_pwr.o(.rev16_text), (4 bytes).
+    Removing stm32l0xx_hal_pwr.o(.revsh_text), (4 bytes).
+    Removing stm32l0xx_hal_pwr.o(i.HAL_PWR_DeInit), (24 bytes).
+    Removing stm32l0xx_hal_pwr.o(i.HAL_PWR_DisableBkUpAccess), (16 bytes).
+    Removing stm32l0xx_hal_pwr.o(i.HAL_PWR_DisablePVD), (16 bytes).
+    Removing stm32l0xx_hal_pwr.o(i.HAL_PWR_DisableWakeUpPin), (16 bytes).
+    Removing stm32l0xx_hal_pwr.o(i.HAL_PWR_EnableBkUpAccess), (16 bytes).
+    Removing stm32l0xx_hal_pwr.o(i.HAL_PWR_EnablePVD), (16 bytes).
+    Removing stm32l0xx_hal_pwr.o(i.HAL_PWR_EnableWakeUpPin), (16 bytes).
+    Removing stm32l0xx_hal_pwr.o(i.HAL_PWR_EnterSLEEPMode), (48 bytes).
+    Removing stm32l0xx_hal_pwr.o(i.HAL_PWR_EnterSTANDBYMode), (32 bytes).
+    Removing stm32l0xx_hal_pwr.o(i.HAL_PWR_EnterSTOPMode), (52 bytes).
+    Removing stm32l0xx_hal_pwr.o(i.HAL_PWR_PVDCallback), (2 bytes).
+    Removing stm32l0xx_hal_pwr.o(i.HAL_PWR_PVDConfig), (96 bytes).
+    Removing stm32l0xx_hal_pwr.o(i.HAL_PWR_PVD_IRQHandler), (28 bytes).
+    Removing stm32l0xx_hal_pwr_ex.o(.rev16_text), (4 bytes).
+    Removing stm32l0xx_hal_pwr_ex.o(.revsh_text), (4 bytes).
+    Removing stm32l0xx_hal_pwr_ex.o(i.HAL_PWREx_DisableFastWakeUp), (16 bytes).
+    Removing stm32l0xx_hal_pwr_ex.o(i.HAL_PWREx_DisableLowPowerRunMode), (24 bytes).
+    Removing stm32l0xx_hal_pwr_ex.o(i.HAL_PWREx_DisableUltraLowPower), (16 bytes).
+    Removing stm32l0xx_hal_pwr_ex.o(i.HAL_PWREx_EnableFastWakeUp), (16 bytes).
+    Removing stm32l0xx_hal_pwr_ex.o(i.HAL_PWREx_EnableLowPowerRunMode), (24 bytes).
+    Removing stm32l0xx_hal_pwr_ex.o(i.HAL_PWREx_EnableUltraLowPower), (16 bytes).
+    Removing stm32l0xx_hal_rcc.o(.rev16_text), (4 bytes).
+    Removing stm32l0xx_hal_rcc.o(.revsh_text), (4 bytes).
+    Removing stm32l0xx_hal_rcc.o(i.HAL_RCC_CCSCallback), (2 bytes).
+    Removing stm32l0xx_hal_rcc.o(i.HAL_RCC_DeInit), (44 bytes).
+    Removing stm32l0xx_hal_rcc.o(i.HAL_RCC_EnableCSS), (20 bytes).
+    Removing stm32l0xx_hal_rcc.o(i.HAL_RCC_GetClockConfig), (64 bytes).
+    Removing stm32l0xx_hal_rcc.o(i.HAL_RCC_GetOscConfig), (192 bytes).
+    Removing stm32l0xx_hal_rcc.o(i.HAL_RCC_GetPCLK1Freq), (32 bytes).
+    Removing stm32l0xx_hal_rcc.o(i.HAL_RCC_GetPCLK2Freq), (32 bytes).
+    Removing stm32l0xx_hal_rcc.o(i.HAL_RCC_MCOConfig), (84 bytes).
+    Removing stm32l0xx_hal_rcc.o(i.HAL_RCC_NMI_IRQHandler), (24 bytes).
+    Removing stm32l0xx_hal_rcc_ex.o(.rev16_text), (4 bytes).
+    Removing stm32l0xx_hal_rcc_ex.o(.revsh_text), (4 bytes).
+    Removing stm32l0xx_hal_rcc_ex.o(i.HAL_RCCEx_CRSConfig), (124 bytes).
+    Removing stm32l0xx_hal_rcc_ex.o(i.HAL_RCCEx_CRSGetSynchronizationInfo), (40 bytes).
+    Removing stm32l0xx_hal_rcc_ex.o(i.HAL_RCCEx_CRSSoftwareSynchronizationGenerate), (16 bytes).
+    Removing stm32l0xx_hal_rcc_ex.o(i.HAL_RCCEx_CRSWaitSynchronization), (136 bytes).
+    Removing stm32l0xx_hal_rcc_ex.o(i.HAL_RCCEx_DisableLSECSS), (20 bytes).
+    Removing stm32l0xx_hal_rcc_ex.o(i.HAL_RCCEx_EnableLSECSS), (20 bytes).
+    Removing stm32l0xx_hal_rcc_ex.o(i.HAL_RCCEx_GetPeriphCLKConfig), (72 bytes).
+    Removing stm32l0xx_hal_rcc_ex.o(i.HAL_RCCEx_PeriphCLKConfig), (324 bytes).
+    Removing stm32l0xx_hal_spi.o(.rev16_text), (4 bytes).
+    Removing stm32l0xx_hal_spi.o(.revsh_text), (4 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_DMAPause), (46 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_DMAResume), (44 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_DMAStop), (54 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_DeInit), (42 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_ErrorCallback), (2 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_GetError), (6 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_GetState), (6 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_IRQHandler), (194 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_MspDeInit), (2 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_MspInit), (2 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_Receive), (492 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_Receive_DMA), (212 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_Receive_IT), (176 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_RxCpltCallback), (2 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_RxHalfCpltCallback), (2 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_Transmit), (412 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive_DMA), (260 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive_IT), (164 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_Transmit_DMA), (192 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_Transmit_IT), (168 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_TxCpltCallback), (2 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_TxHalfCpltCallback), (2 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_TxRxCpltCallback), (2 bytes).
+    Removing stm32l0xx_hal_spi.o(i.HAL_SPI_TxRxHalfCpltCallback), (2 bytes).
+    Removing stm32l0xx_hal_spi.o(i.SPI_2LinesRxISR), (50 bytes).
+    Removing stm32l0xx_hal_spi.o(i.SPI_DMAError), (32 bytes).
+    Removing stm32l0xx_hal_spi.o(i.SPI_DMAHalfReceiveCplt), (10 bytes).
+    Removing stm32l0xx_hal_spi.o(i.SPI_DMAHalfTransmitCplt), (10 bytes).
+    Removing stm32l0xx_hal_spi.o(i.SPI_DMAHalfTransmitReceiveCplt), (10 bytes).
+    Removing stm32l0xx_hal_spi.o(i.SPI_DMAReceiveCplt), (192 bytes).
+    Removing stm32l0xx_hal_spi.o(i.SPI_DMATransmitCplt), (122 bytes).
+    Removing stm32l0xx_hal_spi.o(i.SPI_DMATransmitReceiveCplt), (214 bytes).
+    Removing stm32l0xx_hal_spi.o(i.SPI_RxCloseIRQHandler), (202 bytes).
+    Removing stm32l0xx_hal_spi.o(i.SPI_RxISR), (80 bytes).
+    Removing stm32l0xx_hal_spi.o(i.SPI_TxCloseIRQHandler), (136 bytes).
+    Removing stm32l0xx_hal_spi.o(i.SPI_TxISR), (72 bytes).
+    Removing startup_stm32l053xx.o(HEAP), (512 bytes).
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing stm32l0xx_it.o(.rev16_text), (4 bytes).
+    Removing stm32l0xx_it.o(.revsh_text), (4 bytes).
+    Removing stm32l0xx_it.o(i.SPIx_IRQHandler), (16 bytes).
+    Removing bluenrg_interface.o(.rev16_text), (4 bytes).
+    Removing bluenrg_interface.o(.revsh_text), (4 bytes).
+    Removing clock.o(.rev16_text), (4 bytes).
+    Removing clock.o(.revsh_text), (4 bytes).
+    Removing clock.o(i.Clock_Init), (2 bytes).
+    Removing extra_led.o(.rev16_text), (4 bytes).
+    Removing extra_led.o(.revsh_text), (4 bytes).
+    Removing extra_led.o(i.Extra_LED_Toggle), (16 bytes).
+    Removing sample_service.o(.rev16_text), (4 bytes).
+    Removing sample_service.o(.revsh_text), (4 bytes).
+    Removing stm32_bluenrg_ble.o(.rev16_text), (4 bytes).
+    Removing stm32_bluenrg_ble.o(.revsh_text), (4 bytes).
+    Removing stm32_bluenrg_ble.o(i.Clear_SPI_IRQ), (10 bytes).
+    Removing stm32_bluenrg_ble.o(i.set_irq_as_input), (56 bytes).
+    Removing stm32_bluenrg_ble.o(i.set_irq_as_output), (44 bytes).
+    Removing stm32_bluenrg_ble.o(i.us150Delay), (28 bytes).
+    Removing hci.o(i.hci_disconnect), (84 bytes).
+    Removing hci.o(i.hci_le_add_device_to_white_list), (88 bytes).
+    Removing hci.o(i.hci_le_clear_white_list), (68 bytes).
+    Removing hci.o(i.hci_le_create_connection), (174 bytes).
+    Removing hci.o(i.hci_le_encrypt), (122 bytes).
+    Removing hci.o(i.hci_le_ltk_request_neg_reply), (90 bytes).
+    Removing hci.o(i.hci_le_ltk_request_reply), (104 bytes).
+    Removing hci.o(i.hci_le_rand), (96 bytes).
+    Removing hci.o(i.hci_le_read_advertising_channel_tx_power), (92 bytes).
+    Removing hci.o(i.hci_le_read_buffer_size), (106 bytes).
+    Removing hci.o(i.hci_le_read_channel_map), (100 bytes).
+    Removing hci.o(i.hci_le_read_local_supported_features), (90 bytes).
+    Removing hci.o(i.hci_le_read_local_version), (84 bytes).
+    Removing hci.o(i.hci_le_read_supported_states), (90 bytes).
+    Removing hci.o(i.hci_le_read_white_list_size), (86 bytes).
+    Removing hci.o(i.hci_le_receiver_test), (76 bytes).
+    Removing hci.o(i.hci_le_remove_device_from_white_list), (88 bytes).
+    Removing hci.o(i.hci_le_set_advertise_enable), (96 bytes).
+    Removing hci.o(i.hci_le_set_advertising_data), (108 bytes).
+    Removing hci.o(i.hci_le_set_advertising_parameters), (128 bytes).
+    Removing hci.o(i.hci_le_set_random_address), (98 bytes).
+    Removing hci.o(i.hci_le_test_end), (92 bytes).
+    Removing hci.o(i.hci_le_transmitter_test), (84 bytes).
+    Removing hci.o(i.hci_read_bd_addr), (96 bytes).
+    Removing hci.o(i.hci_read_rssi), (110 bytes).
+    Removing hci.o(i.hci_read_transmit_power_level), (122 bytes).
+    Removing hci.o(i.hci_reset), (66 bytes).
+    Removing bluenrg_hci.o(i.aci_erase_blue_flag), (54 bytes).
+    Removing bluenrg_hci.o(i.aci_gap_set_non_discoverable), (54 bytes).
+    Removing bluenrg_hci.o(i.aci_gap_start_auto_conn_establishment), (186 bytes).
+    Removing bluenrg_hci.o(i.aci_gap_start_general_discovery_proc), (74 bytes).
+    Removing bluenrg_hci.o(i.aci_gap_start_limited_discovery_proc), (74 bytes).
+    Removing bluenrg_hci.o(i.aci_gap_terminate), (72 bytes).
+    Removing bluenrg_hci.o(i.aci_gap_terminate_gap_procedure), (60 bytes).
+    Removing bluenrg_hci.o(i.aci_gap_update_adv_data), (78 bytes).
+    Removing bluenrg_hci.o(i.aci_gatt_add_char_desc), (212 bytes).
+    Removing bluenrg_hci.o(i.aci_gatt_allow_read), (70 bytes).
+    Removing bluenrg_hci.o(i.aci_gatt_disc_all_charac_descriptors), (76 bytes).
+    Removing bluenrg_hci.o(i.aci_gatt_disc_all_charac_of_serv), (76 bytes).
+    Removing bluenrg_hci.o(i.aci_gatt_disc_all_prim_services), (70 bytes).
+    Removing bluenrg_hci.o(i.aci_gatt_find_included_services), (76 bytes).
+    Removing bluenrg_hci.o(i.aci_gatt_read_charac_val), (74 bytes).
+    Removing bluenrg_hci.o(i.aci_gatt_read_long_charac_val), (76 bytes).
+    Removing bluenrg_hci.o(i.aci_gatt_set_desc_value), (130 bytes).
+    Removing bluenrg_hci.o(i.aci_gatt_write_charac_value), (108 bytes).
+    Removing bluenrg_hci.o(i.aci_gatt_write_response), (114 bytes).
+    Removing bluenrg_hci.o(i.aci_get_updater_buffer_size), (72 bytes).
+    Removing bluenrg_hci.o(i.aci_get_updater_version), (72 bytes).
+    Removing bluenrg_hci.o(i.aci_hal_tone_start), (66 bytes).
+    Removing bluenrg_hci.o(i.aci_l2cap_connection_parameter_update_request), (80 bytes).
+    Removing bluenrg_hci.o(i.aci_reset_blue_flag), (54 bytes).
+    Removing bluenrg_hci.o(i.aci_updater_calc_crc), (90 bytes).
+    Removing bluenrg_hci.o(i.aci_updater_erase_sector), (64 bytes).
+    Removing bluenrg_hci.o(i.aci_updater_hw_version), (72 bytes).
+    Removing bluenrg_hci.o(i.aci_updater_program_data_block), (118 bytes).
+    Removing bluenrg_hci.o(i.aci_updater_read_data_block), (94 bytes).
+    Removing bluenrg_hci.o(i.aci_updater_reboot), (54 bytes).
+    Removing bluenrg_hci.o(i.aci_updater_start), (54 bytes).
+    Removing gp_timer.o(i.Timer_Remaining), (16 bytes).
+    Removing gp_timer.o(i.Timer_Reset), (10 bytes).
+    Removing gp_timer.o(i.Timer_Restart), (12 bytes).
+    Removing list.o(i.list_get_next_node), (6 bytes).
+    Removing list.o(i.list_get_prev_node), (6 bytes).
+    Removing list.o(i.list_get_size), (18 bytes).
+    Removing list.o(i.list_insert_node_after), (14 bytes).
+    Removing list.o(i.list_insert_node_before), (14 bytes).
+    Removing list.o(i.list_remove_tail), (26 bytes).
+
+336 unused section(s) (total 20952 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpy.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyc.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memset.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
+    ../clib/microlib/unhosted.c              0x00000000   Number         0  uwrite4.o ABSOLUTE
+    ../clib/microlib/unhosted.c              0x00000000   Number         0  uread4.o ABSOLUTE
+    ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo.c 0x00000000   Number         0  stm32l0xx_nucleo.o ABSOLUTE
+    ..\..\..\..\..\..\Drivers\BSP\STM32L0xx_Nucleo\stm32l0xx_nucleo_bluenrg.c 0x00000000   Number         0  stm32l0xx_nucleo_bluenrg.o ABSOLUTE
+    ..\..\..\..\..\..\Drivers\BSP\STM_Shields\X-NUCLEO-IDB04A1\stm32_bluenrg_ble.c 0x00000000   Number         0  stm32_bluenrg_ble.o ABSOLUTE
+    ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal.c 0x00000000   Number         0  stm32l0xx_hal.o ABSOLUTE
+    ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_adc.c 0x00000000   Number         0  stm32l0xx_hal_adc.o ABSOLUTE
+    ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_adc_ex.c 0x00000000   Number         0  stm32l0xx_hal_adc_ex.o ABSOLUTE
+    ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_cortex.c 0x00000000   Number         0  stm32l0xx_hal_cortex.o ABSOLUTE
+    ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_dma.c 0x00000000   Number         0  stm32l0xx_hal_dma.o ABSOLUTE
+    ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_flash.c 0x00000000   Number         0  stm32l0xx_hal_flash.o ABSOLUTE
+    ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_flash_ex.c 0x00000000   Number         0  stm32l0xx_hal_flash_ex.o ABSOLUTE
+    ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_gpio.c 0x00000000   Number         0  stm32l0xx_hal_gpio.o ABSOLUTE
+    ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_pwr.c 0x00000000   Number         0  stm32l0xx_hal_pwr.o ABSOLUTE
+    ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_pwr_ex.c 0x00000000   Number         0  stm32l0xx_hal_pwr_ex.o ABSOLUTE
+    ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_rcc.c 0x00000000   Number         0  stm32l0xx_hal_rcc.o ABSOLUTE
+    ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_rcc_ex.c 0x00000000   Number         0  stm32l0xx_hal_rcc_ex.o ABSOLUTE
+    ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Src\stm32l0xx_hal_spi.c 0x00000000   Number         0  stm32l0xx_hal_spi.o ABSOLUTE
+    ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\Interface\bluenrg_itf_template.c 0x00000000   Number         0  bluenrg_itf_template.o ABSOLUTE
+    ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c 0x00000000   Number         0  bluenrg_hci.o ABSOLUTE
+    ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\hci.c 0x00000000   Number         0  hci.o ABSOLUTE
+    ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\utils\gp_timer.c 0x00000000   Number         0  gp_timer.o ABSOLUTE
+    ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\utils\list.c 0x00000000   Number         0  list.o ABSOLUTE
+    ..\Src\bluenrg_interface.c               0x00000000   Number         0  bluenrg_interface.o ABSOLUTE
+    ..\Src\clock.c                           0x00000000   Number         0  clock.o ABSOLUTE
+    ..\Src\extra_led.c                       0x00000000   Number         0  extra_led.o ABSOLUTE
+    ..\Src\main.c                            0x00000000   Number         0  main.o ABSOLUTE
+    ..\Src\osal.c                            0x00000000   Number         0  osal.o ABSOLUTE
+    ..\Src\sample_service.c                  0x00000000   Number         0  sample_service.o ABSOLUTE
+    ..\Src\stm32l0xx_it.c                    0x00000000   Number         0  stm32l0xx_it.o ABSOLUTE
+    ..\Src\system_stm32l0xx.c                0x00000000   Number         0  system_stm32l0xx.o ABSOLUTE
+    ..\\..\\..\\..\\..\\..\\Drivers\\BSP\\STM32L0xx_Nucleo\\stm32l0xx_nucleo.c 0x00000000   Number         0  stm32l0xx_nucleo.o ABSOLUTE
+    ..\\..\\..\\..\\..\\..\\Drivers\\BSP\\STM32L0xx_Nucleo\\stm32l0xx_nucleo_bluenrg.c 0x00000000   Number         0  stm32l0xx_nucleo_bluenrg.o ABSOLUTE
+    ..\\..\\..\\..\\..\\..\\Drivers\\BSP\\STM_Shields\\X-NUCLEO-IDB04A1\\stm32_bluenrg_ble.c 0x00000000   Number         0  stm32_bluenrg_ble.o ABSOLUTE
+    ..\\..\\..\\..\\..\\..\\Drivers\\STM32L0xx_HAL_Driver\\Src\\stm32l0xx_hal.c 0x00000000   Number         0  stm32l0xx_hal.o ABSOLUTE
+    ..\\..\\..\\..\\..\\..\\Drivers\\STM32L0xx_HAL_Driver\\Src\\stm32l0xx_hal_adc.c 0x00000000   Number         0  stm32l0xx_hal_adc.o ABSOLUTE
+    ..\\..\\..\\..\\..\\..\\Drivers\\STM32L0xx_HAL_Driver\\Src\\stm32l0xx_hal_adc_ex.c 0x00000000   Number         0  stm32l0xx_hal_adc_ex.o ABSOLUTE
+    ..\\..\\..\\..\\..\\..\\Drivers\\STM32L0xx_HAL_Driver\\Src\\stm32l0xx_hal_cortex.c 0x00000000   Number         0  stm32l0xx_hal_cortex.o ABSOLUTE
+    ..\\..\\..\\..\\..\\..\\Drivers\\STM32L0xx_HAL_Driver\\Src\\stm32l0xx_hal_dma.c 0x00000000   Number         0  stm32l0xx_hal_dma.o ABSOLUTE
+    ..\\..\\..\\..\\..\\..\\Drivers\\STM32L0xx_HAL_Driver\\Src\\stm32l0xx_hal_flash.c 0x00000000   Number         0  stm32l0xx_hal_flash.o ABSOLUTE
+    ..\\..\\..\\..\\..\\..\\Drivers\\STM32L0xx_HAL_Driver\\Src\\stm32l0xx_hal_flash_ex.c 0x00000000   Number         0  stm32l0xx_hal_flash_ex.o ABSOLUTE
+    ..\\..\\..\\..\\..\\..\\Drivers\\STM32L0xx_HAL_Driver\\Src\\stm32l0xx_hal_gpio.c 0x00000000   Number         0  stm32l0xx_hal_gpio.o ABSOLUTE
+    ..\\..\\..\\..\\..\\..\\Drivers\\STM32L0xx_HAL_Driver\\Src\\stm32l0xx_hal_pwr.c 0x00000000   Number         0  stm32l0xx_hal_pwr.o ABSOLUTE
+    ..\\..\\..\\..\\..\\..\\Drivers\\STM32L0xx_HAL_Driver\\Src\\stm32l0xx_hal_pwr_ex.c 0x00000000   Number         0  stm32l0xx_hal_pwr_ex.o ABSOLUTE
+    ..\\..\\..\\..\\..\\..\\Drivers\\STM32L0xx_HAL_Driver\\Src\\stm32l0xx_hal_rcc.c 0x00000000   Number         0  stm32l0xx_hal_rcc.o ABSOLUTE
+    ..\\..\\..\\..\\..\\..\\Drivers\\STM32L0xx_HAL_Driver\\Src\\stm32l0xx_hal_rcc_ex.c 0x00000000   Number         0  stm32l0xx_hal_rcc_ex.o ABSOLUTE
+    ..\\..\\..\\..\\..\\..\\Drivers\\STM32L0xx_HAL_Driver\\Src\\stm32l0xx_hal_spi.c 0x00000000   Number         0  stm32l0xx_hal_spi.o ABSOLUTE
+    ..\\Src\\bluenrg_interface.c             0x00000000   Number         0  bluenrg_interface.o ABSOLUTE
+    ..\\Src\\clock.c                         0x00000000   Number         0  clock.o ABSOLUTE
+    ..\\Src\\extra_led.c                     0x00000000   Number         0  extra_led.o ABSOLUTE
+    ..\\Src\\main.c                          0x00000000   Number         0  main.o ABSOLUTE
+    ..\\Src\\sample_service.c                0x00000000   Number         0  sample_service.o ABSOLUTE
+    ..\\Src\\stm32l0xx_it.c                  0x00000000   Number         0  stm32l0xx_it.o ABSOLUTE
+    ..\\Src\\system_stm32l0xx.c              0x00000000   Number         0  system_stm32l0xx.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    startup_stm32l053xx.s                    0x00000000   Number         0  startup_stm32l053xx.o ABSOLUTE
+    RESET                                    0x08000000   Section      192  startup_stm32l053xx.o(RESET)
+    .ARM.Collect$$$$00000000                 0x080000c0   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x080000c0   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x080000c4   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x080000c8   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x080000c8   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x080000c8   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x080000d0   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x080000d0   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x080000d0   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x080000d0   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x080000d4   Section       32  startup_stm32l053xx.o(.text)
+    .text                                    0x080000f4   Section        0  uidiv.o(.text)
+    .text                                    0x08000120   Section        0  memcpy.o(.text)
+    .text                                    0x08000148   Section        0  memset.o(.text)
+    .text                                    0x0800015a   Section        0  uwrite4.o(.text)
+    .text                                    0x0800016c   Section       36  init.o(.text)
+    i.Add_Sample_Service                     0x08000190   Section        0  sample_service.o(i.Add_Sample_Service)
+    i.Attribute_Modified_CB                  0x08000260   Section        0  sample_service.o(i.Attribute_Modified_CB)
+    i.BNRG_SPI_Init                          0x0800028c   Section        0  stm32_bluenrg_ble.o(i.BNRG_SPI_Init)
+    i.BSP_LED_Init                           0x080002c8   Section        0  stm32l0xx_nucleo.o(i.BSP_LED_Init)
+    i.BSP_LED_Toggle                         0x08000308   Section        0  stm32l0xx_nucleo.o(i.BSP_LED_Toggle)
+    i.BSP_PB_GetState                        0x08000324   Section        0  stm32l0xx_nucleo.o(i.BSP_PB_GetState)
+    i.BSP_PB_Init                            0x08000340   Section        0  stm32l0xx_nucleo.o(i.BSP_PB_Init)
+    i.BlueNRG_RST                            0x08000408   Section        0  stm32_bluenrg_ble.o(i.BlueNRG_RST)
+    i.BlueNRG_SPI_Read_All                   0x08000434   Section        0  stm32_bluenrg_ble.o(i.BlueNRG_SPI_Read_All)
+    i.BlueNRG_SPI_Write                      0x080004d4   Section        0  stm32_bluenrg_ble.o(i.BlueNRG_SPI_Write)
+    i.Clear_SPI_EXTI_Flag                    0x08000574   Section        0  stm32_bluenrg_ble.o(i.Clear_SPI_EXTI_Flag)
+    i.Clock_Time                             0x08000580   Section        0  clock.o(i.Clock_Time)
+    i.Clock_Wait                             0x08000588   Section        0  clock.o(i.Clock_Wait)
+    i.DebugMon_Handler                       0x08000590   Section        0  stm32l0xx_it.o(i.DebugMon_Handler)
+    i.Disable_SPI_IRQ                        0x08000592   Section        0  stm32_bluenrg_ble.o(i.Disable_SPI_IRQ)
+    i.EXTI0_1_IRQHandler                     0x0800059c   Section        0  stm32l0xx_it.o(i.EXTI0_1_IRQHandler)
+    i.EXTI4_15_IRQHandler                    0x080005a8   Section        0  stm32l0xx_it.o(i.EXTI4_15_IRQHandler)
+    i.Enable_SPI_IRQ                         0x080005c0   Section        0  stm32_bluenrg_ble.o(i.Enable_SPI_IRQ)
+    i.Extra_LED_Init                         0x080005cc   Section        0  extra_led.o(i.Extra_LED_Init)
+    i.Extra_LED_Off                          0x08000604   Section        0  extra_led.o(i.Extra_LED_Off)
+    i.Extra_LED_On                           0x08000616   Section        0  extra_led.o(i.Extra_LED_On)
+    i.GAP_ConnectionComplete_CB              0x08000628   Section        0  sample_service.o(i.GAP_ConnectionComplete_CB)
+    i.GAP_DisconnectionComplete_CB           0x08000648   Section        0  sample_service.o(i.GAP_DisconnectionComplete_CB)
+    i.GATT_Notification_CB                   0x08000660   Section        0  sample_service.o(i.GATT_Notification_CB)
+    i.HAL_Delay                              0x0800066e   Section        0  stm32l0xx_hal.o(i.HAL_Delay)
+    i.HAL_GPIO_EXTI_Callback                 0x08000684   Section        0  bluenrg_interface.o(i.HAL_GPIO_EXTI_Callback)
+    i.HAL_GPIO_EXTI_IRQHandler               0x080006e4   Section        0  stm32l0xx_hal_gpio.o(i.HAL_GPIO_EXTI_IRQHandler)
+    i.HAL_GPIO_Init                          0x080006fc   Section        0  stm32l0xx_hal_gpio.o(i.HAL_GPIO_Init)
+    i.HAL_GPIO_ReadPin                       0x08000850   Section        0  stm32l0xx_hal_gpio.o(i.HAL_GPIO_ReadPin)
+    i.HAL_GPIO_TogglePin                     0x0800085e   Section        0  stm32l0xx_hal_gpio.o(i.HAL_GPIO_TogglePin)
+    i.HAL_GPIO_WritePin                      0x08000866   Section        0  stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin)
+    i.HAL_GetTick                            0x08000874   Section        0  stm32l0xx_hal.o(i.HAL_GetTick)
+    i.HAL_IncTick                            0x08000880   Section        0  stm32l0xx_hal.o(i.HAL_IncTick)
+    i.HAL_Init                               0x08000890   Section        0  stm32l0xx_hal.o(i.HAL_Init)
+    i.HAL_InitTick                           0x080008b8   Section        0  stm32l0xx_hal.o(i.HAL_InitTick)
+    i.HAL_MspInit                            0x080008da   Section        0  stm32l0xx_hal.o(i.HAL_MspInit)
+    i.HAL_NVIC_DisableIRQ                    0x080008dc   Section        0  stm32l0xx_hal_cortex.o(i.HAL_NVIC_DisableIRQ)
+    i.HAL_NVIC_EnableIRQ                     0x080008f0   Section        0  stm32l0xx_hal_cortex.o(i.HAL_NVIC_EnableIRQ)
+    i.HAL_NVIC_SetPriority                   0x08000904   Section        0  stm32l0xx_hal_cortex.o(i.HAL_NVIC_SetPriority)
+    i.HAL_RCC_ClockConfig                    0x0800090c   Section        0  stm32l0xx_hal_rcc.o(i.HAL_RCC_ClockConfig)
+    i.HAL_RCC_GetHCLKFreq                    0x08000b50   Section        0  stm32l0xx_hal_rcc.o(i.HAL_RCC_GetHCLKFreq)
+    i.HAL_RCC_GetSysClockFreq                0x08000b78   Section        0  stm32l0xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq)
+    i.HAL_RCC_OscConfig                      0x08000c00   Section        0  stm32l0xx_hal_rcc.o(i.HAL_RCC_OscConfig)
+    i.HAL_SPI_Init                           0x0800103a   Section        0  stm32l0xx_hal_spi.o(i.HAL_SPI_Init)
+    i.HAL_SPI_MspInit                        0x080010c0   Section        0  stm32l0xx_nucleo_bluenrg.o(i.HAL_SPI_MspInit)
+    i.HAL_SPI_TransmitReceive                0x080011c0   Section        0  stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive)
+    i.HAL_SYSTICK_Config                     0x080014b4   Section        0  stm32l0xx_hal_cortex.o(i.HAL_SYSTICK_Config)
+    i.HCI_Event_CB                           0x080014e4   Section        0  sample_service.o(i.HCI_Event_CB)
+    i.HCI_Init                               0x08001560   Section        0  hci.o(i.HCI_Init)
+    i.HCI_Input                              0x08001594   Section        0  hci.o(i.HCI_Input)
+    i.HCI_Process                            0x08001650   Section        0  hci.o(i.HCI_Process)
+    i.Hal_Write_Serial                       0x08001698   Section        0  bluenrg_interface.o(i.Hal_Write_Serial)
+    i.HardFault_Handler                      0x080016dc   Section        0  stm32l0xx_it.o(i.HardFault_Handler)
+    i.Make_Connection                        0x080016e0   Section        0  sample_service.o(i.Make_Connection)
+    i.NMI_Handler                            0x08001780   Section        0  stm32l0xx_it.o(i.NMI_Handler)
+    i.NVIC_SetPriority                       0x08001784   Section        0  stm32l0xx_hal_cortex.o(i.NVIC_SetPriority)
+    NVIC_SetPriority                         0x08001785   Thumb Code    60  stm32l0xx_hal_cortex.o(i.NVIC_SetPriority)
+    i.Osal_MemCpy                            0x080017c8   Section        0  osal.o(i.Osal_MemCpy)
+    i.Osal_MemSet                            0x080017d0   Section        0  osal.o(i.Osal_MemSet)
+    i.PendSV_Handler                         0x080017d8   Section        0  stm32l0xx_it.o(i.PendSV_Handler)
+    i.SPI_WaitOnFlagUntilTimeout             0x080017da   Section        0  stm32l0xx_hal_spi.o(i.SPI_WaitOnFlagUntilTimeout)
+    SPI_WaitOnFlagUntilTimeout               0x080017db   Thumb Code   204  stm32l0xx_hal_spi.o(i.SPI_WaitOnFlagUntilTimeout)
+    i.SVC_Handler                            0x080018a6   Section        0  stm32l0xx_it.o(i.SVC_Handler)
+    i.SysTick_Handler                        0x080018a8   Section        0  stm32l0xx_it.o(i.SysTick_Handler)
+    i.SystemClock_Config                     0x080018b0   Section        0  main.o(i.SystemClock_Config)
+    SystemClock_Config                       0x080018b1   Thumb Code    90  main.o(i.SystemClock_Config)
+    i.SystemInit                             0x08001914   Section        0  system_stm32l0xx.o(i.SystemInit)
+    i.Timer_Expired                          0x08001968   Section        0  gp_timer.o(i.Timer_Expired)
+    i.Timer_Set                              0x08001984   Section        0  gp_timer.o(i.Timer_Set)
+    i.User_Process                           0x08001994   Section        0  main.o(i.User_Process)
+    i.__scatterload_copy                     0x08001a20   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x08001a2e   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08001a30   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.aci_gap_create_connection              0x08001a3e   Section        0  bluenrg_hci.o(i.aci_gap_create_connection)
+    i.aci_gap_init                           0x08001ab0   Section        0  bluenrg_hci.o(i.aci_gap_init)
+    i.aci_gap_set_auth_requirement           0x08001b2a   Section        0  bluenrg_hci.o(i.aci_gap_set_auth_requirement)
+    i.aci_gap_set_discoverable               0x08001b9c   Section        0  bluenrg_hci.o(i.aci_gap_set_discoverable)
+    i.aci_gatt_add_char                      0x08001c42   Section        0  bluenrg_hci.o(i.aci_gatt_add_char)
+    i.aci_gatt_add_serv                      0x08001cf6   Section        0  bluenrg_hci.o(i.aci_gatt_add_serv)
+    i.aci_gatt_init                          0x08001d7c   Section        0  bluenrg_hci.o(i.aci_gatt_init)
+    i.aci_gatt_update_char_value             0x08001db8   Section        0  bluenrg_hci.o(i.aci_gatt_update_char_value)
+    i.aci_gatt_write_charac_descriptor       0x08001e28   Section        0  bluenrg_hci.o(i.aci_gatt_write_charac_descriptor)
+    i.aci_gatt_write_without_response        0x08001e90   Section        0  bluenrg_hci.o(i.aci_gatt_write_without_response)
+    i.aci_hal_set_tx_power_level             0x08001ef8   Section        0  bluenrg_hci.o(i.aci_hal_set_tx_power_level)
+    i.aci_hal_write_config_data              0x08001f40   Section        0  bluenrg_hci.o(i.aci_hal_write_config_data)
+    i.enableNotification                     0x08001f98   Section        0  sample_service.o(i.enableNotification)
+    i.enqueue_packet                         0x08001fe0   Section        0  hci.o(i.enqueue_packet)
+    enqueue_packet                           0x08001fe1   Thumb Code    46  hci.o(i.enqueue_packet)
+    i.hci_le_set_scan_resp_data              0x08002014   Section        0  hci.o(i.hci_le_set_scan_resp_data)
+    i.hci_send_cmd                           0x08002082   Section        0  hci.o(i.hci_send_cmd)
+    i.hci_send_req                           0x080020b4   Section        0  hci.o(i.hci_send_req)
+    i.hci_set_packet_complete_callback       0x080021f0   Section        0  hci.o(i.hci_set_packet_complete_callback)
+    hci_set_packet_complete_callback         0x080021f1   Thumb Code     6  hci.o(i.hci_set_packet_complete_callback)
+    i.hci_write                              0x080021fc   Section        0  hci.o(i.hci_write)
+    i.list_init_head                         0x08002204   Section        0  list.o(i.list_init_head)
+    i.list_insert_head                       0x0800220a   Section        0  list.o(i.list_insert_head)
+    i.list_insert_tail                       0x08002218   Section        0  list.o(i.list_insert_tail)
+    i.list_is_empty                          0x08002226   Section        0  list.o(i.list_is_empty)
+    i.list_remove_head                       0x08002234   Section        0  list.o(i.list_remove_head)
+    i.list_remove_node                       0x0800224e   Section        0  list.o(i.list_remove_node)
+    i.main                                   0x0800225c   Section        0  main.o(i.main)
+    i.new_hci_event                          0x08002330   Section        0  hci.o(i.new_hci_event)
+    i.receiveData                            0x08002344   Section        0  sample_service.o(i.receiveData)
+    i.sendData                               0x0800235c   Section        0  sample_service.o(i.sendData)
+    .constdata                               0x08002390   Section        6  stm32l0xx_nucleo.o(.constdata)
+    .constdata                               0x08002398   Section       28  stm32l0xx_hal_rcc.o(.constdata)
+    .constdata                               0x080023b4   Section        4  clock.o(.constdata)
+    .data                                    0x20000000   Section       16  stm32l0xx_nucleo.o(.data)
+    sConfig                                  0x2000000c   Data           4  stm32l0xx_nucleo.o(.data)
+    .data                                    0x20000010   Section       29  system_stm32l0xx.o(.data)
+    .data                                    0x20000030   Section        4  stm32l0xx_hal.o(.data)
+    uwTick                                   0x20000030   Data           4  stm32l0xx_hal.o(.data)
+    .data                                    0x20000034   Section       25  stm32l0xx_hal_rcc.o(.data)
+    PLLMulTable                              0x20000034   Data           9  stm32l0xx_hal_rcc.o(.data)
+    APBAHBPrescTable                         0x2000003d   Data          16  stm32l0xx_hal_rcc.o(.data)
+    .data                                    0x2000004d   Section        1  main.o(.data)
+    .data                                    0x2000004e   Section        1  stm32l0xx_it.o(.data)
+    .data                                    0x20000050   Section       16  sample_service.o(.data)
+    .data                                    0x20000060   Section       28  hci.o(.data)
+    state                                    0x20000060   Data           1  hci.o(.data)
+    new_packet                               0x20000061   Data           1  hci.o(.data)
+    hci_pckt_len                             0x20000062   Data           2  hci.o(.data)
+    hci_buffer                               0x20000064   Data           4  hci.o(.data)
+    packet_complete_callback                 0x20000068   Data           4  hci.o(.data)
+    .bss                                     0x2000007c   Section       84  stm32_bluenrg_ble.o(.bss)
+    .bss                                     0x200000d0   Section     1320  hci.o(.bss)
+    hciReadPacketBuffer                      0x200000d0   Data        1320  hci.o(.bss)
+    STACK                                    0x200005f8   Section     1024  startup_stm32l053xx.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_Size                           0x000000c0   Number         0  startup_stm32l053xx.o ABSOLUTE
+    __Vectors                                0x08000000   Data           4  startup_stm32l053xx.o(RESET)
+    __Vectors_End                            0x080000c0   Data           0  startup_stm32l053xx.o(RESET)
+    __main                                   0x080000c1   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x080000c1   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x080000c5   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x080000c9   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x080000c9   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x080000c9   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x080000c9   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x080000d1   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x080000d1   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x080000d5   Thumb Code     8  startup_stm32l053xx.o(.text)
+    ADC1_COMP_IRQHandler                     0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    DMA1_Channel1_IRQHandler                 0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    DMA1_Channel2_3_IRQHandler               0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    DMA1_Channel4_5_6_7_IRQHandler           0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    EXTI2_3_IRQHandler                       0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    FLASH_IRQHandler                         0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    I2C1_IRQHandler                          0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    I2C2_IRQHandler                          0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    LCD_IRQHandler                           0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    LPTIM1_IRQHandler                        0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    PVD_IRQHandler                           0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    RCC_CRS_IRQHandler                       0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    RNG_LPUART1_IRQHandler                   0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    RTC_IRQHandler                           0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    SPI1_IRQHandler                          0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    SPI2_IRQHandler                          0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    TIM21_IRQHandler                         0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    TIM22_IRQHandler                         0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    TIM2_IRQHandler                          0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    TIM6_DAC_IRQHandler                      0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    TSC_IRQHandler                           0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    USART1_IRQHandler                        0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    USART2_IRQHandler                        0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    USB_IRQHandler                           0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    WWDG_IRQHandler                          0x080000e9   Thumb Code     0  startup_stm32l053xx.o(.text)
+    __aeabi_uidiv                            0x080000f5   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x080000f5   Thumb Code    44  uidiv.o(.text)
+    ___aeabi_memcpy$ret                      0x08000121   Thumb Code    40  memcpy.o(.text)
+    ___aeabi_memcpy8$ret                     0x08000121   Thumb Code     0  memcpy.o(.text)
+    __aeabi_memcpy4                          0x08000121   Thumb Code     0  memcpy.o(.text)
+    memcpy                                   0x08000121   Thumb Code     0  memcpy.o(.text)
+    memset                                   0x08000149   Thumb Code    18  memset.o(.text)
+    __aeabi_uwrite4                          0x0800015b   Thumb Code    18  uwrite4.o(.text)
+    __rt_uwrite4                             0x0800015b   Thumb Code     0  uwrite4.o(.text)
+    _uwrite4                                 0x0800015b   Thumb Code     0  uwrite4.o(.text)
+    __scatterload                            0x0800016d   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x0800016d   Thumb Code     0  init.o(.text)
+    Add_Sample_Service                       0x08000191   Thumb Code   154  sample_service.o(i.Add_Sample_Service)
+    Attribute_Modified_CB                    0x08000261   Thumb Code    38  sample_service.o(i.Attribute_Modified_CB)
+    BNRG_SPI_Init                            0x0800028d   Thumb Code    50  stm32_bluenrg_ble.o(i.BNRG_SPI_Init)
+    BSP_LED_Init                             0x080002c9   Thumb Code    50  stm32l0xx_nucleo.o(i.BSP_LED_Init)
+    BSP_LED_Toggle                           0x08000309   Thumb Code    20  stm32l0xx_nucleo.o(i.BSP_LED_Toggle)
+    BSP_PB_GetState                          0x08000325   Thumb Code    20  stm32l0xx_nucleo.o(i.BSP_PB_GetState)
+    BSP_PB_Init                              0x08000341   Thumb Code   176  stm32l0xx_nucleo.o(i.BSP_PB_Init)
+    BlueNRG_RST                              0x08000409   Thumb Code    44  stm32_bluenrg_ble.o(i.BlueNRG_RST)
+    BlueNRG_SPI_Read_All                     0x08000435   Thumb Code   150  stm32_bluenrg_ble.o(i.BlueNRG_SPI_Read_All)
+    BlueNRG_SPI_Write                        0x080004d5   Thumb Code   144  stm32_bluenrg_ble.o(i.BlueNRG_SPI_Write)
+    Clear_SPI_EXTI_Flag                      0x08000575   Thumb Code     8  stm32_bluenrg_ble.o(i.Clear_SPI_EXTI_Flag)
+    Clock_Time                               0x08000581   Thumb Code     8  clock.o(i.Clock_Time)
+    Clock_Wait                               0x08000589   Thumb Code     8  clock.o(i.Clock_Wait)
+    DebugMon_Handler                         0x08000591   Thumb Code     2  stm32l0xx_it.o(i.DebugMon_Handler)
+    Disable_SPI_IRQ                          0x08000593   Thumb Code    10  stm32_bluenrg_ble.o(i.Disable_SPI_IRQ)
+    EXTI0_1_IRQHandler                       0x0800059d   Thumb Code    10  stm32l0xx_it.o(i.EXTI0_1_IRQHandler)
+    EXTI4_15_IRQHandler                      0x080005a9   Thumb Code    18  stm32l0xx_it.o(i.EXTI4_15_IRQHandler)
+    Enable_SPI_IRQ                           0x080005c1   Thumb Code    10  stm32_bluenrg_ble.o(i.Enable_SPI_IRQ)
+    Extra_LED_Init                           0x080005cd   Thumb Code    52  extra_led.o(i.Extra_LED_Init)
+    Extra_LED_Off                            0x08000605   Thumb Code    18  extra_led.o(i.Extra_LED_Off)
+    Extra_LED_On                             0x08000617   Thumb Code    16  extra_led.o(i.Extra_LED_On)
+    GAP_ConnectionComplete_CB                0x08000629   Thumb Code    26  sample_service.o(i.GAP_ConnectionComplete_CB)
+    GAP_DisconnectionComplete_CB             0x08000649   Thumb Code    20  sample_service.o(i.GAP_DisconnectionComplete_CB)
+    GATT_Notification_CB                     0x08000661   Thumb Code    14  sample_service.o(i.GATT_Notification_CB)
+    HAL_Delay                                0x0800066f   Thumb Code    22  stm32l0xx_hal.o(i.HAL_Delay)
+    HAL_GPIO_EXTI_Callback                   0x08000685   Thumb Code    86  bluenrg_interface.o(i.HAL_GPIO_EXTI_Callback)
+    HAL_GPIO_EXTI_IRQHandler                 0x080006e5   Thumb Code    18  stm32l0xx_hal_gpio.o(i.HAL_GPIO_EXTI_IRQHandler)
+    HAL_GPIO_Init                            0x080006fd   Thumb Code   312  stm32l0xx_hal_gpio.o(i.HAL_GPIO_Init)
+    HAL_GPIO_ReadPin                         0x08000851   Thumb Code    14  stm32l0xx_hal_gpio.o(i.HAL_GPIO_ReadPin)
+    HAL_GPIO_TogglePin                       0x0800085f   Thumb Code     8  stm32l0xx_hal_gpio.o(i.HAL_GPIO_TogglePin)
+    HAL_GPIO_WritePin                        0x08000867   Thumb Code    12  stm32l0xx_hal_gpio.o(i.HAL_GPIO_WritePin)
+    HAL_GetTick                              0x08000875   Thumb Code     6  stm32l0xx_hal.o(i.HAL_GetTick)
+    HAL_IncTick                              0x08000881   Thumb Code    10  stm32l0xx_hal.o(i.HAL_IncTick)
+    HAL_Init                                 0x08000891   Thumb Code    34  stm32l0xx_hal.o(i.HAL_Init)
+    HAL_InitTick                             0x080008b9   Thumb Code    34  stm32l0xx_hal.o(i.HAL_InitTick)
+    HAL_MspInit                              0x080008db   Thumb Code     2  stm32l0xx_hal.o(i.HAL_MspInit)
+    HAL_NVIC_DisableIRQ                      0x080008dd   Thumb Code    14  stm32l0xx_hal_cortex.o(i.HAL_NVIC_DisableIRQ)
+    HAL_NVIC_EnableIRQ                       0x080008f1   Thumb Code    14  stm32l0xx_hal_cortex.o(i.HAL_NVIC_EnableIRQ)
+    HAL_NVIC_SetPriority                     0x08000905   Thumb Code     8  stm32l0xx_hal_cortex.o(i.HAL_NVIC_SetPriority)
+    HAL_RCC_ClockConfig                      0x0800090d   Thumb Code   568  stm32l0xx_hal_rcc.o(i.HAL_RCC_ClockConfig)
+    HAL_RCC_GetHCLKFreq                      0x08000b51   Thumb Code    26  stm32l0xx_hal_rcc.o(i.HAL_RCC_GetHCLKFreq)
+    HAL_RCC_GetSysClockFreq                  0x08000b79   Thumb Code   110  stm32l0xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq)
+    HAL_RCC_OscConfig                        0x08000c01   Thumb Code  1082  stm32l0xx_hal_rcc.o(i.HAL_RCC_OscConfig)
+    HAL_SPI_Init                             0x0800103b   Thumb Code   132  stm32l0xx_hal_spi.o(i.HAL_SPI_Init)
+    HAL_SPI_MspInit                          0x080010c1   Thumb Code   238  stm32l0xx_nucleo_bluenrg.o(i.HAL_SPI_MspInit)
+    HAL_SPI_TransmitReceive                  0x080011c1   Thumb Code   756  stm32l0xx_hal_spi.o(i.HAL_SPI_TransmitReceive)
+    HAL_SYSTICK_Config                       0x080014b5   Thumb Code    38  stm32l0xx_hal_cortex.o(i.HAL_SYSTICK_Config)
+    HCI_Event_CB                             0x080014e5   Thumb Code   120  sample_service.o(i.HCI_Event_CB)
+    HCI_Init                                 0x08001561   Thumb Code    44  hci.o(i.HCI_Init)
+    HCI_Input                                0x08001595   Thumb Code   182  hci.o(i.HCI_Input)
+    HCI_Process                              0x08001651   Thumb Code    68  hci.o(i.HCI_Process)
+    Hal_Write_Serial                         0x08001699   Thumb Code    60  bluenrg_interface.o(i.Hal_Write_Serial)
+    HardFault_Handler                        0x080016dd   Thumb Code     2  stm32l0xx_it.o(i.HardFault_Handler)
+    Make_Connection                          0x080016e1   Thumb Code   130  sample_service.o(i.Make_Connection)
+    NMI_Handler                              0x08001781   Thumb Code     2  stm32l0xx_it.o(i.NMI_Handler)
+    Osal_MemCpy                              0x080017c9   Thumb Code     8  osal.o(i.Osal_MemCpy)
+    Osal_MemSet                              0x080017d1   Thumb Code     8  osal.o(i.Osal_MemSet)
+    PendSV_Handler                           0x080017d9   Thumb Code     2  stm32l0xx_it.o(i.PendSV_Handler)
+    SVC_Handler                              0x080018a7   Thumb Code     2  stm32l0xx_it.o(i.SVC_Handler)
+    SysTick_Handler                          0x080018a9   Thumb Code     8  stm32l0xx_it.o(i.SysTick_Handler)
+    SystemInit                               0x08001915   Thumb Code    66  system_stm32l0xx.o(i.SystemInit)
+    Timer_Expired                            0x08001969   Thumb Code    28  gp_timer.o(i.Timer_Expired)
+    Timer_Set                                0x08001985   Thumb Code    14  gp_timer.o(i.Timer_Set)
+    User_Process                             0x08001995   Thumb Code   102  main.o(i.User_Process)
+    __scatterload_copy                       0x08001a21   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x08001a2f   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08001a31   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    aci_gap_create_connection                0x08001a3f   Thumb Code   114  bluenrg_hci.o(i.aci_gap_create_connection)
+    aci_gap_init                             0x08001ab1   Thumb Code   122  bluenrg_hci.o(i.aci_gap_init)
+    aci_gap_set_auth_requirement             0x08001b2b   Thumb Code   114  bluenrg_hci.o(i.aci_gap_set_auth_requirement)
+    aci_gap_set_discoverable                 0x08001b9d   Thumb Code   166  bluenrg_hci.o(i.aci_gap_set_discoverable)
+    aci_gatt_add_char                        0x08001c43   Thumb Code   180  bluenrg_hci.o(i.aci_gatt_add_char)
+    aci_gatt_add_serv                        0x08001cf7   Thumb Code   134  bluenrg_hci.o(i.aci_gatt_add_serv)
+    aci_gatt_init                            0x08001d7d   Thumb Code    60  bluenrg_hci.o(i.aci_gatt_init)
+    aci_gatt_update_char_value               0x08001db9   Thumb Code   112  bluenrg_hci.o(i.aci_gatt_update_char_value)
+    aci_gatt_write_charac_descriptor         0x08001e29   Thumb Code   104  bluenrg_hci.o(i.aci_gatt_write_charac_descriptor)
+    aci_gatt_write_without_response          0x08001e91   Thumb Code   104  bluenrg_hci.o(i.aci_gatt_write_without_response)
+    aci_hal_set_tx_power_level               0x08001ef9   Thumb Code    72  bluenrg_hci.o(i.aci_hal_set_tx_power_level)
+    aci_hal_write_config_data                0x08001f41   Thumb Code    86  bluenrg_hci.o(i.aci_hal_write_config_data)
+    enableNotification                       0x08001f99   Thumb Code    58  sample_service.o(i.enableNotification)
+    hci_le_set_scan_resp_data                0x08002015   Thumb Code   110  hci.o(i.hci_le_set_scan_resp_data)
+    hci_send_cmd                             0x08002083   Thumb Code    50  hci.o(i.hci_send_cmd)
+    hci_send_req                             0x080020b5   Thumb Code   302  hci.o(i.hci_send_req)
+    hci_write                                0x080021fd   Thumb Code     8  hci.o(i.hci_write)
+    list_init_head                           0x08002205   Thumb Code     6  list.o(i.list_init_head)
+    list_insert_head                         0x0800220b   Thumb Code    14  list.o(i.list_insert_head)
+    list_insert_tail                         0x08002219   Thumb Code    14  list.o(i.list_insert_tail)
+    list_is_empty                            0x08002227   Thumb Code    14  list.o(i.list_is_empty)
+    list_remove_head                         0x08002235   Thumb Code    26  list.o(i.list_remove_head)
+    list_remove_node                         0x0800224f   Thumb Code    12  list.o(i.list_remove_node)
+    main                                     0x0800225d   Thumb Code   186  main.o(i.main)
+    new_hci_event                            0x08002331   Thumb Code    14  hci.o(i.new_hci_event)
+    receiveData                              0x08002345   Thumb Code    22  sample_service.o(i.receiveData)
+    sendData                                 0x0800235d   Thumb Code    42  sample_service.o(i.sendData)
+    GPIO_PIN                                 0x08002390   Data           2  stm32l0xx_nucleo.o(.constdata)
+    BUTTON_PIN                               0x08002392   Data           2  stm32l0xx_nucleo.o(.constdata)
+    BUTTON_IRQn                              0x08002394   Data           2  stm32l0xx_nucleo.o(.constdata)
+    MSIRangeTable                            0x08002398   Data          28  stm32l0xx_hal_rcc.o(.constdata)
+    CLOCK_SECOND                             0x080023b4   Data           4  clock.o(.constdata)
+    Region$$Table$$Base                      0x080023b8   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x080023d8   Number         0  anon$$obj.o(Region$$Table)
+    GPIO_PORT                                0x20000000   Data           4  stm32l0xx_nucleo.o(.data)
+    BUTTON_PORT                              0x20000004   Data           4  stm32l0xx_nucleo.o(.data)
+    SpixTimeout                              0x20000008   Data           4  stm32l0xx_nucleo.o(.data)
+    SystemCoreClock                          0x20000010   Data           4  system_stm32l0xx.o(.data)
+    AHBPrescTable                            0x20000014   Data          16  system_stm32l0xx.o(.data)
+    PLLMulTable                              0x20000024   Data           9  system_stm32l0xx.o(.data)
+    BLE_Role                                 0x2000004d   Data           1  main.o(.data)
+    button_event                             0x2000004e   Data           1  stm32l0xx_it.o(.data)
+    set_connectable                          0x20000050   Data           1  sample_service.o(.data)
+    notification_enabled                     0x20000051   Data           1  sample_service.o(.data)
+    connection_handle                        0x20000052   Data           2  sample_service.o(.data)
+    sampleServHandle                         0x20000054   Data           2  sample_service.o(.data)
+    TXCharHandle                             0x20000056   Data           2  sample_service.o(.data)
+    RXCharHandle                             0x20000058   Data           2  sample_service.o(.data)
+    connected                                0x2000005c   Data           4  sample_service.o(.data)
+    hciReadPktPool                           0x2000006c   Data           8  hci.o(.data)
+    hciReadPktRxQueue                        0x20000074   Data           8  hci.o(.data)
+    SpiHandle                                0x2000007c   Data          84  stm32_bluenrg_ble.o(.bss)
+    __initial_sp                             0x200009f8   Data           0  startup_stm32l053xx.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x080000c1
+
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00002454, Max: 0x00010000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x000023d8, Max: 0x00010000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x000000c0   Data   RO         1750    RESET               startup_stm32l053xx.o
+    0x080000c0   0x00000000   Code   RO         2891  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x080000c0   0x00000004   Code   RO         2912    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x080000c4   0x00000004   Code   RO         2915    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x080000c8   0x00000000   Code   RO         2917    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x080000c8   0x00000000   Code   RO         2919    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x080000c8   0x00000008   Code   RO         2920    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x080000d0   0x00000000   Code   RO         2922    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x080000d0   0x00000000   Code   RO         2924    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x080000d0   0x00000004   Code   RO         2913    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x080000d4   0x00000020   Code   RO         1751    .text               startup_stm32l053xx.o
+    0x080000f4   0x0000002c   Code   RO         2894    .text               mc_p.l(uidiv.o)
+    0x08000120   0x00000028   Code   RO         2896    .text               mc_p.l(memcpy.o)
+    0x08000148   0x00000012   Code   RO         2900    .text               mc_p.l(memset.o)
+    0x0800015a   0x00000012   Code   RO         2910    .text               mc_p.l(uwrite4.o)
+    0x0800016c   0x00000024   Code   RO         2926    .text               mc_p.l(init.o)
+    0x08000190   0x000000d0   Code   RO         2085    i.Add_Sample_Service  sample_service.o
+    0x08000260   0x0000002c   Code   RO         2086    i.Attribute_Modified_CB  sample_service.o
+    0x0800028c   0x0000003c   Code   RO         2166    i.BNRG_SPI_Init     stm32_bluenrg_ble.o
+    0x080002c8   0x00000040   Code   RO            8    i.BSP_LED_Init      stm32l0xx_nucleo.o
+    0x08000308   0x0000001c   Code   RO           11    i.BSP_LED_Toggle    stm32l0xx_nucleo.o
+    0x08000324   0x0000001c   Code   RO           12    i.BSP_PB_GetState   stm32l0xx_nucleo.o
+    0x08000340   0x000000c8   Code   RO           13    i.BSP_PB_Init       stm32l0xx_nucleo.o
+    0x08000408   0x0000002c   Code   RO         2167    i.BlueNRG_RST       stm32_bluenrg_ble.o
+    0x08000434   0x000000a0   Code   RO         2168    i.BlueNRG_SPI_Read_All  stm32_bluenrg_ble.o
+    0x080004d4   0x000000a0   Code   RO         2169    i.BlueNRG_SPI_Write  stm32_bluenrg_ble.o
+    0x08000574   0x0000000c   Code   RO         2170    i.Clear_SPI_EXTI_Flag  stm32_bluenrg_ble.o
+    0x08000580   0x00000008   Code   RO         1970    i.Clock_Time        clock.o
+    0x08000588   0x00000008   Code   RO         1971    i.Clock_Wait        clock.o
+    0x08000590   0x00000002   Code   RO         1867    i.DebugMon_Handler  stm32l0xx_it.o
+    0x08000592   0x0000000a   Code   RO         2172    i.Disable_SPI_IRQ   stm32_bluenrg_ble.o
+    0x0800059c   0x0000000a   Code   RO         1868    i.EXTI0_1_IRQHandler  stm32l0xx_it.o
+    0x080005a6   0x00000002   PAD
+    0x080005a8   0x00000018   Code   RO         1869    i.EXTI4_15_IRQHandler  stm32l0xx_it.o
+    0x080005c0   0x0000000a   Code   RO         2173    i.Enable_SPI_IRQ    stm32_bluenrg_ble.o
+    0x080005ca   0x00000002   PAD
+    0x080005cc   0x00000038   Code   RO         2029    i.Extra_LED_Init    extra_led.o
+    0x08000604   0x00000012   Code   RO         2030    i.Extra_LED_Off     extra_led.o
+    0x08000616   0x00000010   Code   RO         2031    i.Extra_LED_On      extra_led.o
+    0x08000626   0x00000002   PAD
+    0x08000628   0x00000020   Code   RO         2087    i.GAP_ConnectionComplete_CB  sample_service.o
+    0x08000648   0x00000018   Code   RO         2088    i.GAP_DisconnectionComplete_CB  sample_service.o
+    0x08000660   0x0000000e   Code   RO         2089    i.GATT_Notification_CB  sample_service.o
+    0x0800066e   0x00000016   Code   RO          320    i.HAL_Delay         stm32l0xx_hal.o
+    0x08000684   0x00000060   Code   RO         1942    i.HAL_GPIO_EXTI_Callback  bluenrg_interface.o
+    0x080006e4   0x00000018   Code   RO         1155    i.HAL_GPIO_EXTI_IRQHandler  stm32l0xx_hal_gpio.o
+    0x080006fc   0x00000154   Code   RO         1156    i.HAL_GPIO_Init     stm32l0xx_hal_gpio.o
+    0x08000850   0x0000000e   Code   RO         1158    i.HAL_GPIO_ReadPin  stm32l0xx_hal_gpio.o
+    0x0800085e   0x00000008   Code   RO         1159    i.HAL_GPIO_TogglePin  stm32l0xx_hal_gpio.o
+    0x08000866   0x0000000c   Code   RO         1160    i.HAL_GPIO_WritePin  stm32l0xx_hal_gpio.o
+    0x08000872   0x00000002   PAD
+    0x08000874   0x0000000c   Code   RO          331    i.HAL_GetTick       stm32l0xx_hal.o
+    0x08000880   0x00000010   Code   RO          333    i.HAL_IncTick       stm32l0xx_hal.o
+    0x08000890   0x00000028   Code   RO          334    i.HAL_Init          stm32l0xx_hal.o
+    0x080008b8   0x00000022   Code   RO          335    i.HAL_InitTick      stm32l0xx_hal.o
+    0x080008da   0x00000002   Code   RO          338    i.HAL_MspInit       stm32l0xx_hal.o
+    0x080008dc   0x00000014   Code   RO          714    i.HAL_NVIC_DisableIRQ  stm32l0xx_hal_cortex.o
+    0x080008f0   0x00000014   Code   RO          715    i.HAL_NVIC_EnableIRQ  stm32l0xx_hal_cortex.o
+    0x08000904   0x00000008   Code   RO          718    i.HAL_NVIC_SetPriority  stm32l0xx_hal_cortex.o
+    0x0800090c   0x00000244   Code   RO         1358    i.HAL_RCC_ClockConfig  stm32l0xx_hal_rcc.o
+    0x08000b50   0x00000028   Code   RO         1362    i.HAL_RCC_GetHCLKFreq  stm32l0xx_hal_rcc.o
+    0x08000b78   0x00000088   Code   RO         1366    i.HAL_RCC_GetSysClockFreq  stm32l0xx_hal_rcc.o
+    0x08000c00   0x0000043a   Code   RO         1369    i.HAL_RCC_OscConfig  stm32l0xx_hal_rcc.o
+    0x0800103a   0x00000084   Code   RO         1523    i.HAL_SPI_Init      stm32l0xx_hal_spi.o
+    0x080010be   0x00000002   PAD
+    0x080010c0   0x00000100   Code   RO          257    i.HAL_SPI_MspInit   stm32l0xx_nucleo_bluenrg.o
+    0x080011c0   0x000002f4   Code   RO         1532    i.HAL_SPI_TransmitReceive  stm32l0xx_hal_spi.o
+    0x080014b4   0x00000030   Code   RO          722    i.HAL_SYSTICK_Config  stm32l0xx_hal_cortex.o
+    0x080014e4   0x0000007c   Code   RO         2090    i.HCI_Event_CB      sample_service.o
+    0x08001560   0x00000034   Code   RO         2246    i.HCI_Init          hci.o
+    0x08001594   0x000000bc   Code   RO         2247    i.HCI_Input         hci.o
+    0x08001650   0x00000048   Code   RO         2248    i.HCI_Process       hci.o
+    0x08001698   0x00000044   Code   RO         1943    i.Hal_Write_Serial  bluenrg_interface.o
+    0x080016dc   0x00000002   Code   RO         1870    i.HardFault_Handler  stm32l0xx_it.o
+    0x080016de   0x00000002   PAD
+    0x080016e0   0x000000a0   Code   RO         2091    i.Make_Connection   sample_service.o
+    0x08001780   0x00000002   Code   RO         1871    i.NMI_Handler       stm32l0xx_it.o
+    0x08001782   0x00000002   PAD
+    0x08001784   0x00000044   Code   RO          724    i.NVIC_SetPriority  stm32l0xx_hal_cortex.o
+    0x080017c8   0x00000008   Code   RO         2065    i.Osal_MemCpy       osal.o
+    0x080017d0   0x00000008   Code   RO         2066    i.Osal_MemSet       osal.o
+    0x080017d8   0x00000002   Code   RO         1872    i.PendSV_Handler    stm32l0xx_it.o
+    0x080017da   0x000000cc   Code   RO         1553    i.SPI_WaitOnFlagUntilTimeout  stm32l0xx_hal_spi.o
+    0x080018a6   0x00000002   Code   RO         1874    i.SVC_Handler       stm32l0xx_it.o
+    0x080018a8   0x00000008   Code   RO         1875    i.SysTick_Handler   stm32l0xx_it.o
+    0x080018b0   0x00000064   Code   RO         1757    i.SystemClock_Config  main.o
+    0x08001914   0x00000054   Code   RO          284    i.SystemInit        system_stm32l0xx.o
+    0x08001968   0x0000001c   Code   RO         2777    i.Timer_Expired     gp_timer.o
+    0x08001984   0x0000000e   Code   RO         2781    i.Timer_Set         gp_timer.o
+    0x08001992   0x00000002   PAD
+    0x08001994   0x0000008c   Code   RO         1758    i.User_Process      main.o
+    0x08001a20   0x0000000e   Code   RO         2930    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x08001a2e   0x00000002   Code   RO         2931    i.__scatterload_null  mc_p.l(handlers.o)
+    0x08001a30   0x0000000e   Code   RO         2932    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x08001a3e   0x00000072   Code   RO         2499    i.aci_gap_create_connection  bluenrg_hci.o
+    0x08001ab0   0x0000007a   Code   RO         2500    i.aci_gap_init      bluenrg_hci.o
+    0x08001b2a   0x00000072   Code   RO         2501    i.aci_gap_set_auth_requirement  bluenrg_hci.o
+    0x08001b9c   0x000000a6   Code   RO         2502    i.aci_gap_set_discoverable  bluenrg_hci.o
+    0x08001c42   0x000000b4   Code   RO         2510    i.aci_gatt_add_char  bluenrg_hci.o
+    0x08001cf6   0x00000086   Code   RO         2512    i.aci_gatt_add_serv  bluenrg_hci.o
+    0x08001d7c   0x0000003c   Code   RO         2518    i.aci_gatt_init     bluenrg_hci.o
+    0x08001db8   0x00000070   Code   RO         2522    i.aci_gatt_update_char_value  bluenrg_hci.o
+    0x08001e28   0x00000068   Code   RO         2523    i.aci_gatt_write_charac_descriptor  bluenrg_hci.o
+    0x08001e90   0x00000068   Code   RO         2526    i.aci_gatt_write_without_response  bluenrg_hci.o
+    0x08001ef8   0x00000048   Code   RO         2529    i.aci_hal_set_tx_power_level  bluenrg_hci.o
+    0x08001f40   0x00000056   Code   RO         2531    i.aci_hal_write_config_data  bluenrg_hci.o
+    0x08001f96   0x00000002   PAD
+    0x08001f98   0x00000048   Code   RO         2092    i.enableNotification  sample_service.o
+    0x08001fe0   0x00000034   Code   RO         2249    i.enqueue_packet    hci.o
+    0x08002014   0x0000006e   Code   RO         2271    i.hci_le_set_scan_resp_data  hci.o
+    0x08002082   0x00000032   Code   RO         2278    i.hci_send_cmd      hci.o
+    0x080020b4   0x0000013c   Code   RO         2279    i.hci_send_req      hci.o
+    0x080021f0   0x0000000c   Code   RO         2280    i.hci_set_packet_complete_callback  hci.o
+    0x080021fc   0x00000008   Code   RO         2281    i.hci_write         hci.o
+    0x08002204   0x00000006   Code   RO         2816    i.list_init_head    list.o
+    0x0800220a   0x0000000e   Code   RO         2817    i.list_insert_head  list.o
+    0x08002218   0x0000000e   Code   RO         2820    i.list_insert_tail  list.o
+    0x08002226   0x0000000e   Code   RO         2821    i.list_is_empty     list.o
+    0x08002234   0x0000001a   Code   RO         2822    i.list_remove_head  list.o
+    0x0800224e   0x0000000c   Code   RO         2823    i.list_remove_node  list.o
+    0x0800225a   0x00000002   PAD
+    0x0800225c   0x000000d4   Code   RO         1759    i.main              main.o
+    0x08002330   0x00000014   Code   RO         2282    i.new_hci_event     hci.o
+    0x08002344   0x00000016   Code   RO         2093    i.receiveData       sample_service.o
+    0x0800235a   0x00000002   PAD
+    0x0800235c   0x00000034   Code   RO         2094    i.sendData          sample_service.o
+    0x08002390   0x00000006   Data   RO           30    .constdata          stm32l0xx_nucleo.o
+    0x08002396   0x00000002   PAD
+    0x08002398   0x0000001c   Data   RO         1370    .constdata          stm32l0xx_hal_rcc.o
+    0x080023b4   0x00000004   Data   RO         1972    .constdata          clock.o
+    0x080023b8   0x00000020   Data   RO         2928    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x000009f8, Max: 0x00002000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000010   Data   RW           31    .data               stm32l0xx_nucleo.o
+    0x20000010   0x0000001d   Data   RW          285    .data               system_stm32l0xx.o
+    0x2000002d   0x00000003   PAD
+    0x20000030   0x00000004   Data   RW          344    .data               stm32l0xx_hal.o
+    0x20000034   0x00000019   Data   RW         1371    .data               stm32l0xx_hal_rcc.o
+    0x2000004d   0x00000001   Data   RW         1760    .data               main.o
+    0x2000004e   0x00000001   Data   RW         1876    .data               stm32l0xx_it.o
+    0x2000004f   0x00000001   PAD
+    0x20000050   0x00000010   Data   RW         2095    .data               sample_service.o
+    0x20000060   0x0000001c   Data   RW         2284    .data               hci.o
+    0x2000007c   0x00000054   Zero   RW         2177    .bss                stm32_bluenrg_ble.o
+    0x200000d0   0x00000528   Zero   RW         2283    .bss                hci.o
+    0x200005f8   0x00000400   Zero   RW         1748    STACK               startup_stm32l053xx.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+      1368          0          0          0          0      30176   bluenrg_hci.o
+       164         18          0          0          0       2188   bluenrg_interface.o
+        16          0          4          0          0       3297   clock.o
+        90          4          0          0          0       1620   extra_led.o
+        42          0          0          0          0       2048   gp_timer.o
+       880         50          0         28       1320      27661   hci.o
+        86          0          0          0          0       4689   list.o
+       452         74          0          1          0      35763   main.o
+        16          0          0          0          0       1268   osal.o
+       752        128          0         16          0       8967   sample_service.o
+        32         10        192          0       1024        708   startup_stm32l053xx.o
+       456         40          0          0         84       6610   stm32_bluenrg_ble.o
+       126         18          0          4          0       4916   stm32l0xx_hal.o
+       164         30          0          0          0      11247   stm32l0xx_hal_cortex.o
+       398         34          0          0          0       5307   stm32l0xx_hal_gpio.o
+      1838         82         28         25          0       6994   stm32l0xx_hal_rcc.o
+      1092          0          0          0          0       4317   stm32l0xx_hal_spi.o
+        52          6          0          1          0       4868   stm32l0xx_it.o
+       320         54          6         16          0     189148   stm32l0xx_nucleo.o
+       256         18          0          0          0       1394   stm32l0xx_nucleo_bluenrg.o
+        84         18          0         29          0       1401   system_stm32l0xx.o
+
+    ----------------------------------------------------------------------
+      8706        584        264        124       2428     354587   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+        22          0          2          4          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+        40          0          0          0          0         68   memcpy.o
+        18          0          0          0          0         68   memset.o
+        44          0          0          0          0         72   uidiv.o
+        18          0          0          0          0         60   uwrite4.o
+
+    ----------------------------------------------------------------------
+       206         16          0          0          0        336   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       206         16          0          0          0        336   mc_p.l
+
+    ----------------------------------------------------------------------
+       206         16          0          0          0        336   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      8912        600        264        124       2428     350939   Grand Totals
+      8912        600        264        124       2428     350939   ELF Image Totals
+      8912        600        264        124          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 9176 (   8.96kB)
+    Total RW  Size (RW Data + ZI Data)              2552 (   2.49kB)
+    Total ROM Size (Code + RO Data + RW Data)       9300 (   9.08kB)
+
+==============================================================================
+

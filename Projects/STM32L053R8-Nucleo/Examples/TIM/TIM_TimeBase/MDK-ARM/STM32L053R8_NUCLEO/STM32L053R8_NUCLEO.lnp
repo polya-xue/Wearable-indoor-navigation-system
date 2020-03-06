@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+"stm32l053r8_nucleo\stm32l0xx_nucleo.o"
+"stm32l053r8_nucleo\system_stm32l0xx.o"
+"stm32l053r8_nucleo\stm32l0xx_hal.o"
+"stm32l053r8_nucleo\stm32l0xx_hal_adc.o"
+"stm32l053r8_nucleo\stm32l0xx_hal_adc_ex.o"
+"stm32l053r8_nucleo\stm32l0xx_hal_cortex.o"
+"stm32l053r8_nucleo\stm32l0xx_hal_dma.o"
+"stm32l053r8_nucleo\stm32l0xx_hal_flash.o"
+"stm32l053r8_nucleo\stm32l0xx_hal_flash_ex.o"
+"stm32l053r8_nucleo\stm32l0xx_hal_gpio.o"
+"stm32l053r8_nucleo\stm32l0xx_hal_pwr.o"
+"stm32l053r8_nucleo\stm32l0xx_hal_pwr_ex.o"
+"stm32l053r8_nucleo\stm32l0xx_hal_rcc.o"
+"stm32l053r8_nucleo\stm32l0xx_hal_rcc_ex.o"
+"stm32l053r8_nucleo\stm32l0xx_hal_spi.o"
+"stm32l053r8_nucleo\stm32l0xx_hal_tim.o"
+"stm32l053r8_nucleo\stm32l0xx_hal_tim_ex.o"
+"stm32l053r8_nucleo\startup_stm32l053xx.o"
+"stm32l053r8_nucleo\main.o"
+"stm32l053r8_nucleo\stm32l0xx_hal_msp.o"
+"stm32l053r8_nucleo\stm32l0xx_it.o"
+--library_type=microlib --strict --scatter "STM32L053R8_NUCLEO\STM32L053R8_NUCLEO.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM32L053R8_NUCLEO.map" -o STM32L053R8_NUCLEO\STM32L053R8_NUCLEO.axf

@@ -1,0 +1,183 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¶ÃVision V5.16.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 12 Microsoft, Microsoft, LIC=KRMII-TLZ87-YVB1Y-I5TGB-XGR98-4K7FY
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.16.0.0
+Toolchain Path:  D:\KEIL ARM\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 (build 20)
+Assembler:       Armasm.exe V5.06 (build 20)
+Linker/Locator:  ArmLink.exe V5.06 (build 20)
+Library Manager: ArmAr.exe V5.06 (build 20)
+Hex Converter:   FromElf.exe V5.06 (build 20)
+CPU DLL:         SARMCM3.DLL V5.16.0.0
+Dialog DLL:      DARMCM1.DLL V1.12.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.17.0
+Dialog DLL:      TARMCM1.DLL V1.9.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Administrator\Desktop\X-CUBE-IDB04_1(÷’∏Â)\Projects\STM32L053R8-Nucleo\Applications\Bluetooth_LE\SensorDemo\STM32L0xx_MDK-ARM\SensorDemoProject.uvprojx
+Project File Date:  08/13/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 (build 20)', folder: 'D:\KEIL ARM\ARM\ARMCC\Bin'
+Build target 'SensorDemo-STM32L053R8_NUCLEO'
+compiling stm32l0xx_nucleo.c...
+compiling stm32l0xx_nucleo_bluenrg.c...
+compiling system_stm32l0xx.c...
+compiling stm32l0xx_hal.c...
+compiling stm32l0xx_hal_adc.c...
+compiling stm32l0xx_hal_adc_ex.c...
+compiling stm32l0xx_hal_cortex.c...
+compiling stm32l0xx_hal_dma.c...
+compiling stm32l0xx_hal_flash.c...
+compiling stm32l0xx_hal_flash_ex.c...
+compiling stm32l0xx_hal_gpio.c...
+compiling stm32l0xx_hal_pwr.c...
+compiling stm32l0xx_hal_pwr_ex.c...
+compiling stm32l0xx_hal_rcc.c...
+compiling stm32l0xx_hal_rcc_ex.c...
+compiling stm32l0xx_hal_spi.c...
+compiling stm32l0xx_hal_i2c.c...
+compiling stm32l0xx_hal_i2c_ex.c...
+compiling stm32l0xx_hal_uart.c...
+compiling stm32l0xx_hal_uart_ex.c...
+compiling stm32l0xx_hal_tim_ex.c...
+compiling stm32l0xx_hal_tim.c...
+assembling startup_stm32l053xx.s...
+compiling main.c...
+..\Src\main.c(112): warning:  #177-D: variable "t" was declared but never referenced
+        uint8_t t;
+..\Src\main.c(113): warning:  #177-D: variable "len" was declared but never referenced
+        uint8_t len;    
+..\Src\main.c: 2 warnings, 0 errors
+compiling stm32l0xx_it.c...
+compiling bluenrg_interface.c...
+compiling clock.c...
+compiling osal.c...
+compiling sensor_service.c...
+..\Src\sensor_service.c(354): warning:  #550-D: variable "ret" was set but never used
+    tBleStatus ret;
+..\Src\sensor_service.c: 1 warning, 0 errors
+compiling stm32_bluenrg_ble.c...
+compiling hci.c...
+compiling bluenrg_hci.c...
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(38): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(66): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(91): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(148): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(179): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(223): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(297): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(383): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(430): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(456): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(504): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(531): warning:  #68-D: integer conversion resulted in a change of sign
+      return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(557): warning:  #68-D: integer conversion resulted in a change of sign
+      return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(583): warning:  #68-D: integer conversion resulted in a change of sign
+      return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(609): warning:  #68-D: integer conversion resulted in a change of sign
+      return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(643): warning:  #68-D: integer conversion resulted in a change of sign
+      return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(688): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(716): warning:  #68-D: integer conversion resulted in a change of sign
+      return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(742): warning:  #68-D: integer conversion resulted in a change of sign
+      return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(777): warning:  #68-D: integer conversion resulted in a change of sign
+      return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(811): warning:  #68-D: integer conversion resulted in a change of sign
+      return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(843): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(870): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(910): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(942): warning:  #68-D: integer conversion resulted in a change of sign
+      return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(969): warning:  #68-D: integer conversion resulted in a change of sign
+      return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1030): warning:  #68-D: integer conversion resulted in a change of sign
+      return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1068): warning:  #68-D: integer conversion resulted in a change of sign
+      return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1087): warning:  #68-D: integer conversion resulted in a change of sign
+      return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1112): warning:  #68-D: integer conversion resulted in a change of sign
+      return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1140): warning:  #68-D: integer conversion resulted in a change of sign
+          return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1163): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1184): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1201): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1220): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1241): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1260): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1277): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1299): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1314): warning:  #68-D: integer conversion resulted in a change of sign
+          return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1334): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1348): warning:  #68-D: integer conversion resulted in a change of sign
+          return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1362): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1391): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c(1412): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\hci\controller\bluenrg_hci.c: 45 warnings, 0 errors
+compiling bluenrg_itf_template.c...
+compiling gp_timer.c...
+compiling list.c...
+compiling MPU6050.c...
+compiling gpio.c...
+compiling i2c.c...
+compiling stm32l0xx_hal_msp.c...
+compiling usart2.c...
+compiling Ultra.c...
+linking...
+Program Size: Code=16780 RO-data=264 RW-data=172 ZI-data=2852  
+FromELF: creating hex file...
+".\STM32L053R8_NUCLEO\SensorDemoProject.axf" - 0 Error(s), 48 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Administrator\Desktop\X-CUBE-IDB04_1(÷’∏Â)\Projects\STM32L053R8-Nucleo\Applications\Bluetooth_LE\SensorDemo\STM32L0xx_MDK-ARM\RTE
+  D:\KEIL ARM\ARM\PACK\Keil\STM32L0xx_DFP\1.4.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:59
+</pre>
+</body>
+</html>

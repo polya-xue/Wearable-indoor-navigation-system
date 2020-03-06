@@ -1,0 +1,9 @@
+stm32l053r8_nucleo\bluenrg_interface.o: ..\Src\bluenrg_interface.c
+stm32l053r8_nucleo\bluenrg_interface.o: ..\Inc\bluenrg_interface.h
+stm32l053r8_nucleo\bluenrg_interface.o: ..\..\..\..\..\..\Drivers\BSP\STM_Shields\X-NUCLEO-IDB04A1\stm32_bluenrg_ble.h
+stm32l053r8_nucleo\bluenrg_interface.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h
+stm32l053r8_nucleo\bluenrg_interface.o: ..\Inc\stm32l0xx_hal_conf.h
+stm32l053r8_nucleo\bluenrg_interface.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h
+stm32l053r8_nucleo\bluenrg_interface.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h
+stm32l053r8_nucleo\bluenrg_interface.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h
+stm32l053r8_nucleo\bluenrg_interface.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h

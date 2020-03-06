@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20sp"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical" 
+    android:background="@drawable/background2">
+
+    <ImageView
+        android:id="@+id/st_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/st_bloc_marque_qi_bl_blanc_v" />
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:textColor="#5ba0bf"
+        android:shadowColor="@android:color/background_light"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:text="STM32 BLE Toolbox"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/stm32_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:clickable="true"  
+        android:onClick="imageClick"
+        android:src="@drawable/stm32_2" />
+ 
+
+</LinearLayout>

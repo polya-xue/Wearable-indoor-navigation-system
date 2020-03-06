@@ -1,0 +1,10 @@
+stm32l053r8_nucleo\clock.o: ..\Src\clock.c
+stm32l053r8_nucleo\clock.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\clock.h
+stm32l053r8_nucleo\clock.o: ..\..\..\..\..\..\Middlewares\ST\STM32_BlueNRG\SimpleBlueNRG_HCI\includes\hal_types.h
+stm32l053r8_nucleo\clock.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+stm32l053r8_nucleo\clock.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h
+stm32l053r8_nucleo\clock.o: ..\Inc\stm32l0xx_hal_conf.h
+stm32l053r8_nucleo\clock.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h
+stm32l053r8_nucleo\clock.o: ..\..\..\..\..\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h
+stm32l053r8_nucleo\clock.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h
+stm32l053r8_nucleo\clock.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h
