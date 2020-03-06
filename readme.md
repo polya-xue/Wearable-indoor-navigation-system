@@ -15,4 +15,6 @@ This model can distinguish user's state of motion by seting corresponding shresh
 3) Indoor positioning: 
 Many beacons with corresponding position information are set up in indoor areas(such as shop) in advance.They will broadcast the iBeacon package constantly. The receiver (the user) can identify their position by receiving broadcasting package.Specifically,the App plays a role as iBeacon reciever which will recieve broadcast packages from 3 beacon with the strongest signal.The reciever  calculates the distance information according to the rssi signal, and then use Trilateration algorithm, finally the address position of the user can be obtained.
 
+Image show
+![Image text](https://github.com/polya-xue/Wearable-indoor-navigation-system/blob/master/picture/show.png)
 
